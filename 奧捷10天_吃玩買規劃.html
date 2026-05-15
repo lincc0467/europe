@@ -114,6 +114,25 @@
     padding:10px 12px; border-radius:4px; font-size:13.5px; margin:10px 0;
   }
 
+  /* Parallel menu tables (original / Chinese / price) */
+  .menu-tbl{width:100%; border-collapse:collapse; font-size:13px; min-width:0; margin:6px 0 12px; table-layout:fixed;}
+  .menu-tbl th, .menu-tbl td{padding:7px 8px; text-align:left; vertical-align:top; border-bottom:1px solid var(--border); white-space:normal; word-wrap:break-word; overflow-wrap:break-word;}
+  .menu-tbl th{background:var(--soft); color:var(--primary); font-weight:700; font-size:12px; white-space:normal;}
+  .menu-tbl td{font-weight:400; color:var(--text); white-space:normal;}
+  .menu-tbl td:first-child{font-weight:400; color:var(--text); white-space:normal;}
+  .menu-tbl .col-orig{width:46%;}
+  .menu-tbl .col-zh{width:40%;}
+  .menu-tbl .col-price{width:14%; color:var(--accent); font-weight:700; white-space:nowrap; text-align:right;}
+  .menu-tbl tr.beef td{background:#fff5f5;}
+  .menu-tbl tr.star td{background:#fffbe6;}
+  .menu-tbl tr.veg td{background:#f4faf0;}
+  .menu-tbl .dish{font-weight:700; color:var(--primary);}
+  .menu-tbl .sub{display:block; color:var(--muted); font-size:11.5px; margin-top:2px;}
+  .menu-tbl .mk{font-weight:700; margin-right:2px;}
+  .menu-tbl caption{caption-side:top; text-align:left; font-weight:700; color:var(--accent); padding:8px 0 4px; font-size:14px;}
+
+  .gmap-link{text-decoration:none;border-bottom:1px dotted currentColor;white-space:nowrap;}
+  .gmap-link:hover,.gmap-link:active{opacity:.72;background:var(--soft);border-radius:3px;padding:0 2px;}
   footer{text-align:center; font-size:12px; color:var(--muted); padding:18px 14px;}
 
   .day{
@@ -147,14 +166,14 @@
 </header>
 
 <nav>
-  <a href="#overview">① 總覽</a>
-  <a href="#schedule">② 行程表</a>
-  <a href="#selfmeal">③ 4 次自理餐</a>
-  <a href="#freetime">④ 自由時段</a>
-  <a href="#shopping">⑤ 購物</a>
-  <a href="#optional">⑥ 自費評估</a>
-  <a href="#booking">⑦ 訂位清單</a>
-  <a href="#tips">⑧ 行前提醒</a>
+  <a href="#overview">① Overview 總覽</a>
+  <a href="#schedule">② Schedule 行程表</a>
+  <a href="#selfmeal">③ Self-Meals 自理餐</a>
+  <a href="#freetime">④ Free Time 自由時段</a>
+  <a href="#shopping">⑤ Shopping 購物</a>
+  <a href="#optional">⑥ Optional 自費評估</a>
+  <a href="#booking">⑦ Bookings 訂位清單</a>
+  <a href="#tips">⑧ Tips 行前提醒</a>
 </nav>
 
 <main>
@@ -166,7 +185,7 @@
   <h3>集合(說明會 PDF 確認)</h3>
   <ul>
     <li><b>集合時間:5/30 (六) 21:00</b></li>
-    <li><b>集合地點:桃園機場 第一航廈 華航 11 號櫃台</b></li>
+    <li><b>集合地點:<a href="https://maps.google.com/?q=Taiwan%20Taoyuan%20International%20Airport%20Terminal%201%2C%20Dayuan%20District%2C%20Taoyuan" target="_blank" class="gmap-link">📍 桃園機場 第一航廈</a> 華航 11 號櫃台</b></li>
     <li>領隊:陳志雄 先生 · 國內電話 +886 0932-151-911</li>
     <li>華航客服:886-3-3982451 · 桃園/松山機場緊急調度 0932-365-795</li>
     <li class="alert" style="list-style:none; margin-left:-22px;">⚠️ <b>出發前 7 天</b>須將護照正本送交雄獅(機場團體作業規定)</li>
@@ -188,10 +207,10 @@
   <div class="table-wrap"><table>
     <thead><tr><th>夜</th><th>城市</th><th>飯店名稱 / 地址 / 電話</th></tr></thead>
     <tbody>
-      <tr><td>1-2</td><td>維也納<br><span style="font-weight:400;color:var(--muted);font-size:12px;">5/31, 6/1</span></td><td><b>ARCOTEL AQ WIEN</b> ★★★★<br>Althanstraße 8, 1090 Vienna<br>TEL: <a href="tel:+43122424200">+43-1-22424200</a></td></tr>
-      <tr><td>3</td><td>薩爾斯堡<br><span style="font-weight:400;color:var(--muted);font-size:12px;">6/2</span></td><td><b>WYNDHAM GRAND SALZBURG CONFERENCE CENTRE</b> ★★★★<br>Fanny Von Lehnert Strasse 7, 5020 Salzburg<br>TEL: <a href="tel:+4366246880">+43-66-246880</a></td></tr>
-      <tr><td>4</td><td>庫倫洛夫<br><span style="font-weight:400;color:var(--muted);font-size:12px;">6/3</span></td><td><b>ZLATY ANDEL</b> ★★★★<br>Náměstí Svornosti 11, 381 01 Český Krumlov<br>TEL: <a href="tel:+420380712310">+420-380-712-310</a></td></tr>
-      <tr><td>5-7</td><td>布拉格<br><span style="font-weight:400;color:var(--muted);font-size:12px;">6/4, 6/5, 6/6</span></td><td><b>HOTEL ROYAL PRAGUE</b> ★★★★<br>Thámova 36, 186 00 Prague<br>TEL: <a href="tel:+420296686900">+420-296-686-900</a></td></tr>
+      <tr><td>1-2</td><td>維也納<br><span style="font-weight:400;color:var(--muted);font-size:12px;">5/31, 6/1</span></td><td><b><a href="https://maps.google.com/?q=Arcotel%20AQ%20Wien%2C%20Althanstra%C3%9Fe%208%2C%201090%20Vienna" target="_blank" class="gmap-link">ARCOTEL AQ WIEN</a></b> ★★★★<br><a href="https://maps.google.com/?q=Althanstra%C3%9Fe%208%2C%201090%20Vienna" target="_blank" class="gmap-link">📍 Althanstraße 8, 1090 Vienna</a><br>TEL: <a href="tel:+43122424200">+43-1-22424200</a></td></tr>
+      <tr><td>3</td><td>薩爾斯堡<br><span style="font-weight:400;color:var(--muted);font-size:12px;">6/2</span></td><td><b><a href="https://maps.google.com/?q=Wyndham%20Grand%20Salzburg%20Conference%20Centre%2C%20Fanny-von-Lehnert-Stra%C3%9Fe%207%2C%205020%20Salzburg" target="_blank" class="gmap-link">WYNDHAM GRAND SALZBURG CONFERENCE CENTRE</a></b> ★★★★<br><a href="https://maps.google.com/?q=Fanny-von-Lehnert-Stra%C3%9Fe%207%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Fanny-von-Lehnert-Straße 7, 5020 Salzburg</a><br>TEL: <a href="tel:+4366246880">+43-66-246880</a></td></tr>
+      <tr><td>4</td><td>庫倫洛夫<br><span style="font-weight:400;color:var(--muted);font-size:12px;">6/3</span></td><td><b><a href="https://maps.google.com/?q=Zlat%C3%BD%20And%C4%9Bl%2C%20N%C3%A1m%C4%9Bst%C3%AD%20Svornosti%2011%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">ZLATY ANDEL</a></b> ★★★★<br><a href="https://maps.google.com/?q=N%C3%A1m%C4%9Bst%C3%AD%20Svornosti%2011%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Náměstí Svornosti 11, Český Krumlov</a><br>TEL: <a href="tel:+420380712310">+420-380-712-310</a></td></tr>
+      <tr><td>5-7</td><td>布拉格<br><span style="font-weight:400;color:var(--muted);font-size:12px;">6/4, 6/5, 6/6</span></td><td><b><a href="https://maps.google.com/?q=Hotel%20Royal%20Prague%2C%20Th%C3%A1mova%2036%2C%20186%2000%20Praha" target="_blank" class="gmap-link">HOTEL ROYAL PRAGUE</a></b> ★★★★<br><a href="https://maps.google.com/?q=Th%C3%A1mova%2036%2C%20186%2000%20Praha" target="_blank" class="gmap-link">📍 Thámova 36, 186 00 Prague</a><br>TEL: <a href="tel:+420296686900">+420-296-686-900</a></td></tr>
     </tbody>
   </table></div>
 
@@ -209,12 +228,12 @@
     <tbody>
       <tr><td><span class="day">1</span></td><td>5/30 六</td><td>TPE 23:30 → PRG(機上過夜)</td><td>- / - / 機上</td><td>—</td></tr>
       <tr><td><span class="day">2</span></td><td>5/31 日</td><td>PRG → 庫特納霍拉 → 布爾諾 → <b>維也納</b></td><td>機上 / 中式 / 維也納肋排</td><td>🔵 晚</td></tr>
-      <tr><td><span class="day">3</span></td><td>6/1 一</td><td>維也納 · 美景宮<sup>下</sup>/霍夫堡<sup>下</sup>/史蒂芬<sup>下</sup><br><span style="font-weight:400;color:var(--muted);font-size:12px;">(施華洛世奇旗艦店為自行前往)</span></td><td>飯店 / 中式 / <span class="star">★自理</span></td><td><span class="star">★晚</span> · 🔵 晚</td></tr>
-      <tr><td><span class="day">4</span></td><td>6/2 二</td><td>維也納 → 鹽湖區<br>聖吉爾根<sup>下</sup>+哈修塔特<sup>下</sup>→ <b>薩爾斯堡</b></td><td>飯店 / <span class="star">★自理</span> / 中式</td><td><span class="star">★午</span> · 🔵 晚</td></tr>
-      <tr><td><span class="day">5</span></td><td>6/3 三</td><td>薩爾斯堡 · 莫札特出生地<sup>下</sup>/<br>老城<sup>下</sup>/<b style="color:var(--red);">堡塞纜車<sup>★特</sup></b> → <b>庫倫洛夫</b></td><td>飯店 / <span class="star">★自理</span> / 燒烤三道式</td><td><span class="star">★午</span> · 🔵 晚</td></tr>
-      <tr><td><span class="day">6</span></td><td>6/4 四</td><td>庫倫洛夫<sup>下</sup>+CK 城堡<sup>下</sup> →<br>波希米亞小鎮 → <b>布拉格</b></td><td>飯店 / 古城香煎牛排 / 中式</td><td>🔵 晚</td></tr>
-      <tr><td><span class="day">7</span></td><td>6/5 五</td><td>布拉格 · <b style="color:var(--red);">聖維特<sup>★特</sup></b>/<br>黃金巷<sup>入</sup>/舊皇宮<sup>入</sup>/<br>高堡區<sup>下</sup>/新城區<sup>下</sup></td><td>飯店 / 中式 / 捷克豬腳三道式</td><td>🔵 晚</td></tr>
-      <tr><td><span class="day">8</span></td><td>6/6 六</td><td>布拉格 · 猶太區<sup>下</sup>/查理大橋<sup>下</sup>/<br><b style="color:var(--red);">伏爾他瓦河遊船<sup>★特</sup></b>/老城廣場<sup>下</sup></td><td>飯店 / 船上百匯 / <span class="star">★自理</span></td><td><span class="star">★晚</span> · 🔵 晚</td></tr>
+      <tr><td><span class="day">3</span></td><td>6/1 一</td><td>維也納 · <a href="https://maps.google.com/?q=Belvedere%20Palace%2C%20Prinz-Eugen-Stra%C3%9Fe%2027%2C%201030%20Wien" target="_blank" class="gmap-link">📍 美景宮 Belvedere</a><sup>下</sup>/<a href="https://maps.google.com/?q=Hofburg%2C%20Michaelerkuppel%2C%201010%20Wien" target="_blank" class="gmap-link">📍 霍夫堡 Hofburg</a><sup>下</sup>/<a href="https://maps.google.com/?q=Stephansdom%2C%20Stephansplatz%203%2C%201010%20Wien" target="_blank" class="gmap-link">📍 史蒂芬教堂 Stephansdom</a><sup>下</sup><br><span style="font-weight:400;color:var(--muted);font-size:12px;">(<a href="https://maps.google.com/?q=Swarovski%2C%20K%C3%A4rntner%20Stra%C3%9Fe%2024%2C%201010%20Wien" target="_blank" class="gmap-link">📍 施華洛世奇旗艦店 Swarovski</a> 為自行前往)</span></td><td>飯店 / 中式 / <span class="star">★自理</span></td><td><span class="star">★晚</span> · 🔵 晚</td></tr>
+      <tr><td><span class="day">4</span></td><td>6/2 二</td><td>維也納 → 鹽湖區<br><a href="https://maps.google.com/?q=St.%20Gilgen%2C%20Salzburg%2C%20Austria" target="_blank" class="gmap-link">📍 聖吉爾根 St. Gilgen</a><sup>下</sup>+<a href="https://maps.google.com/?q=Hallstatt%2C%20Salzkammergut%2C%20Austria" target="_blank" class="gmap-link">📍 哈修塔特 Hallstatt</a><sup>下</sup>→ <b>薩爾斯堡</b></td><td>飯店 / <span class="star">★自理</span> / 中式</td><td><span class="star">★午</span> · 🔵 晚</td></tr>
+      <tr><td><span class="day">5</span></td><td>6/3 三</td><td>薩爾斯堡 · <a href="https://maps.google.com/?q=Mozart%20Geburtshaus%2C%20Getreidegasse%209%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 莫札特出生地 Mozart Geburtshaus</a><sup>下</sup>/<br><a href="https://maps.google.com/?q=Salzburg%20Old%20Town%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 薩爾斯堡老城 Salzburg Altstadt</a><sup>下</sup>/<b style="color:var(--red);"><a href="https://maps.google.com/?q=Festungsbahn%20Salzburg%2C%20Festungsgasse%204%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 堡塞纜車 Festungsbahn</a><sup>★特</sup></b> → <b>庫倫洛夫</b></td><td>飯店 / <span class="star">★自理</span> / 燒烤三道式</td><td><span class="star">★午</span> · 🔵 晚</td></tr>
+      <tr><td><span class="day">6</span></td><td>6/4 四</td><td><a href="https://maps.google.com/?q=%C4%8Cesk%C3%BD%20Krumlov%2C%20Czech%20Republic" target="_blank" class="gmap-link">📍 庫倫洛夫 Český Krumlov</a><sup>下</sup>+<a href="https://maps.google.com/?q=%C4%8Cesk%C3%BD%20Krumlov%20Castle%2C%20Z%C3%A1mek%2059%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 CK 城堡 Castle</a><sup>下</sup> →<br>波希米亞小鎮 → <b>布拉格</b></td><td>飯店 / 古城香煎牛排 / 中式</td><td>🔵 晚</td></tr>
+      <tr><td><span class="day">7</span></td><td>6/5 五</td><td>布拉格 · <b style="color:var(--red);"><a href="https://maps.google.com/?q=St.%20Vitus%20Cathedral%2C%20Prague%20Castle%2C%20Praha" target="_blank" class="gmap-link">📍 聖維特大教堂 St. Vitus</a><sup>★特</sup></b>/<br><a href="https://maps.google.com/?q=Golden%20Lane%2C%20Prague%20Castle%2C%20Praha" target="_blank" class="gmap-link">📍 黃金巷 Golden Lane</a><sup>入</sup>/<a href="https://maps.google.com/?q=Old%20Royal%20Palace%2C%20Prague%20Castle%2C%20Praha" target="_blank" class="gmap-link">📍 舊皇宮 Old Royal Palace</a><sup>入</sup>/<br><a href="https://maps.google.com/?q=Vy%C5%A1ehrad%2C%20V%20Pevnosti%2C%20Praha" target="_blank" class="gmap-link">📍 高堡區 Vyšehrad</a><sup>下</sup>/<a href="https://maps.google.com/?q=Wenceslas%20Square%2C%20Praha" target="_blank" class="gmap-link">📍 新城區 Nové Město</a><sup>下</sup></td><td>飯店 / 中式 / 捷克豬腳三道式</td><td>🔵 晚</td></tr>
+      <tr><td><span class="day">8</span></td><td>6/6 六</td><td>布拉格 · <a href="https://maps.google.com/?q=Jewish%20Quarter%20Josefov%2C%20Praha" target="_blank" class="gmap-link">📍 猶太區 Josefov</a><sup>下</sup>/<a href="https://maps.google.com/?q=Charles%20Bridge%2C%20Karl%C5%AFv%20most%2C%20Praha" target="_blank" class="gmap-link">📍 查理大橋 Charles Bridge</a><sup>下</sup>/<br><b style="color:var(--red);"><a href="https://maps.google.com/?q=Prague%20Boats%2C%20Ra%C5%A1%C3%ADnovo%20n%C3%A1b%C5%99e%C5%BE%C3%AD%2C%20Praha" target="_blank" class="gmap-link">📍 伏爾他瓦河遊船 Vltava Cruise</a><sup>★特</sup></b>/<a href="https://maps.google.com/?q=Starom%C4%9Bstsk%C3%A9%20n%C3%A1m%C4%9Bst%C3%AD%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 老城廣場 Old Town Square</a><sup>下</sup></td><td>飯店 / 船上百匯 / <span class="star">★自理</span></td><td><span class="star">★晚</span> · 🔵 晚</td></tr>
       <tr><td><span class="day">9</span></td><td>6/7 日</td><td>PRG 10:40 → TPE(機上)</td><td>飯店 / 機上 / 機上</td><td>—</td></tr>
       <tr><td><span class="day">10</span></td><td>6/8 一</td><td>05:05 抵桃園</td><td>機上 / - / -</td><td>—</td></tr>
     </tbody>
@@ -238,123 +257,150 @@
       <p class="lead">下午走完美景宮/霍夫堡/史蒂芬教堂,晚餐在舊城區自由。以下都在步行 3-10 分鐘內。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · Figlmüller(Bäckerstraße 分店) ✅ 已訂位</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Figlm%C3%BCller%2C%20B%C3%A4ckerstra%C3%9Fe%206%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Figlmüller</a>（Bäckerstraße 分店）✅ 已訂位</div>
         <div class="opt-desc">全維也納最有名的炸牛排 Wiener Schnitzel,一份比臉大。<b>Bäckerstraße 6</b>(史蒂芬教堂後方約 4 分鐘),為 Wollzeile 本店隔壁巷的姊妹店,菜單與口味相同、空間較新、有冷氣,人潮分流後較容易訂到位。</div>
         <div class="opt-meta">€25-35/人 · <span class="chip chip-green">✅ 已訂位</span> figlmueller.at</div>
         <div class="tip" style="margin-top:8px;">
           <b>📋 訂位資訊</b><br>
           📅 <b>6/1 (一) 18:00</b> · 👥 <b>6 人</b><br>
-          📍 Figlmüller Bäckerstraße(Bäckerstraße 6, 1010 Wien)<br>
+          <a href="https://maps.google.com/?q=Figlm%C3%BCller%2C%20B%C3%A4ckerstra%C3%9Fe%206%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Figlmüller Bäckerstraße</a>（Bäckerstraße 6, 1010 Wien）<br>
           📝 <b>特殊備註:一位女士不吃牛肉</b>(Special request: One lady in our party does not eat beef)<br>
           <span style="color:var(--muted);font-size:12px;">※ 確認 email 已寄達,現場可備手機顯示</span>
         </div>
 
         <details style="margin-top:10px;">
-          <summary>📜 Figlmüller 完整菜單(中文說明 · 🐄 = 含牛肉)</summary>
+          <summary>📜 Figlmüller 完整菜單(英文 / 中文並列)</summary>
           <div class="inner">
-            <p class="lead">圖標說明:<b>🐄 = 牛/小牛肉</b>(不吃牛的女士請避開) · <b>✓ = 安全</b> · <b>⭐ = 招牌</b>。價格皆為歐元。</p>
+            <p class="lead">圖示:<b>🐄</b> = 牛/小牛肉(不吃牛者避開) · <b>✓</b> = 安全 · <b>⭐</b> = 招牌。<b>現場可直接指英文欄給服務生看</b>。價格皆為歐元。</p>
 
-            <h4>🥣 前菜 & 湯品 Starters &amp; Soups</h4>
-            <ul>
-              <li>🐄 <b>Clear beef broth · 清燉牛肉湯</b>(可選粗粒粉餃 Griessnockerl 或薄煎餅絲 Frittaten 配料)— €6.9</li>
-              <li>🐄 <b>Beef tartare · 韃靼生牛肉</b>(經典醃料)— €20.5</li>
-              <li>✓ <b>Baby spinach salad · 嫩菠菜沙拉</b>(梨子+堅果+奶油起司+核桃油+蜂蜜)— €16.5</li>
-              <li>🐄 <b>Pan-fried sweetbreads · 香煎小牛胸腺</b>(配塔塔醬)— €16.5</li>
-              <li>✓ Sourdough rye bread 100% 裸麥酸種麵包 — €4.5;焦糖鮮奶油奶油 — €2.0</li>
-            </ul>
+            <table class="menu-tbl">
+              <caption>🥣 Starters &amp; Soups · 前菜 &amp; 湯品</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>English</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr class="beef"><td>🐄 <span class="dish">Clear beef broth</span><span class="sub">with semolina dumpling or sliced pancakes</span></td><td><span class="dish">清燉牛肉湯</span><span class="sub">配粗粒粉餃 或 薄煎餅絲</span></td><td>6.9</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Beef tartare</span><span class="sub">with classic marinade</span></td><td><span class="dish">韃靼生牛肉</span><span class="sub">經典醃料</span></td><td>20.5</td></tr>
+                <tr><td>✓ <span class="dish">Baby spinach salad</span><span class="sub">with pear, nuts, cream cheese, walnut oil, honey</span></td><td><span class="dish">嫩菠菜沙拉</span><span class="sub">梨 + 堅果 + 奶油起司 + 核桃油 + 蜂蜜</span></td><td>16.5</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Pan-fried sweetbreads</span><span class="sub">with sauce Tartare</span></td><td><span class="dish">香煎小牛胸腺</span><span class="sub">配塔塔醬</span></td><td>16.5</td></tr>
+                <tr><td>✓ <span class="dish">Sourdough bread</span><span class="sub">100% rye</span></td><td><span class="dish">裸麥酸種麵包</span><span class="sub">100% 裸麥</span></td><td>4.5</td></tr>
+                <tr><td>✓ <span class="dish">Caramelized sweet cream butter</span></td><td><span class="dish">焦糖鮮奶油奶油</span></td><td>2.0</td></tr>
+              </tbody>
+            </table>
 
-            <h4>🍽️ 主菜 Main Dishes</h4>
-            <ul>
-              <li>⭐✓ <b>Figlmüller-Schnitzel · 招牌炸豬排</b>(<b>1905 年至今的本店招牌</b>,豬里肌敲薄、比臉大、酥脆;不是牛肉)— €21.9</li>
-              <li>✓ <b>Chicken Cordon Bleu · 雞肉藍帶</b>(夾火腿與起司)— €21.5</li>
-              <li>🐄 <b>Calf's liver pan-fried · 香煎小牛肝</b> — €19.5</li>
-              <li>🐄 <b>Wiener Schnitzel of veal · 維也納正統小牛炸排</b>(法定維也納炸排只能用小牛)— €28.9</li>
-              <li>✓ <b>Marinated Viennese chicken · 醃漬維也納炸雞</b>(切小塊炸)— €20.9</li>
-              <li>✓ <b>Emmentaler pan-fried · 香煎艾門塔起司</b>(配塔塔醬)— €13.9</li>
-              <li>✓ <b>Planted Viennese Schnitzel · 純素炸排</b>(豌豆蛋白製)— €22.5</li>
-              <li>🐄 <b>Viennese boiled beef · 水煮牛肉 Tafelspitz</b>(配韭菜醬、蘋果辣根、煎馬鈴薯;法蘭茲皇帝最愛)— €28.5</li>
-              <li>🐄 <b>Creamy veal goulash · 奶油小牛肉燉</b>(配 Spätzle 雞蛋麵疙瘩)— €21.5</li>
-              <li>🐄 <b>Glazed calf's liver · 焦糖小牛肝</b>(配炸洋蔥圈、烤蘋果、煎馬鈴薯)— €22.5</li>
-              <li>🐄 <b>Sirloin steak · 沙朗牛排</b>(配洋蔥、煎馬鈴薯)— €27.9</li>
-              <li>🐄 <b>Minced veal butter schnitzel · 小牛絞肉煎排</b>(配薯泥)— €22.5</li>
-              <li>✓ <b>Homemade spinach dumplings · 自製菠菜餃</b>(配焦化奶油、帕馬森)— €15.9</li>
-              <li>✓ <b>Vegetable lentils · 蔬菜扁豆</b>(配烤布里歐麵包餃)— €14.5</li>
-              <li>✓ <b>Fillet of Schneeberg char · 雪山紅點鮭魚菲力</b>(配杏仁奶油、巴西利馬鈴薯)— €28.5</li>
-            </ul>
+            <table class="menu-tbl">
+              <caption>🍽️ Main Dishes · 主菜</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>English</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr class="star"><td>⭐ ✓ <span class="dish">Figlmüller-Schnitzel</span><span class="sub">Our original made of pork since 1905</span></td><td><span class="dish">招牌炸豬排</span><span class="sub">1905 年至今本店招牌,豬里肌敲薄、比臉大</span></td><td>21.9</td></tr>
+                <tr><td>✓ <span class="dish">Chicken Cordon Bleu</span></td><td><span class="dish">雞肉藍帶</span><span class="sub">夾火腿與起司</span></td><td>21.5</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Calf's liver pan-fried</span></td><td><span class="dish">香煎小牛肝</span></td><td>19.5</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Wiener Schnitzel of veal</span></td><td><span class="dish">維也納正統小牛炸排</span><span class="sub">法定維也納炸排只能用小牛</span></td><td>28.9</td></tr>
+                <tr><td>✓ <span class="dish">Marinated Viennese chicken</span><span class="sub">fried in small pieces</span></td><td><span class="dish">醃漬維也納炸雞</span><span class="sub">切小塊炸</span></td><td>20.9</td></tr>
+                <tr><td>✓ <span class="dish">Emmentaler pan-fried</span><span class="sub">sauce Tartare</span></td><td><span class="dish">香煎艾門塔起司</span><span class="sub">配塔塔醬</span></td><td>13.9</td></tr>
+                <tr class="veg"><td>✓ <span class="dish">Planted Viennese Schnitzel</span><span class="sub">vegan schnitzel made from pea protein, with green side salad</span></td><td><span class="dish">純素炸排</span><span class="sub">豌豆蛋白製 + 綠沙拉</span></td><td>22.5</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Viennese boiled beef in the pot</span><span class="sub">with chive sauce, apple horseradish and browned potatoes</span></td><td><span class="dish">水煮牛肉 Tafelspitz</span><span class="sub">韭菜醬 + 蘋果辣根 + 煎馬鈴薯(法蘭茲皇帝最愛)</span></td><td>28.5</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Creamy veal goulash</span><span class="sub">with dumplings "spaetzle"</span></td><td><span class="dish">奶油小牛肉燉</span><span class="sub">配 Spätzle 雞蛋麵疙瘩</span></td><td>21.5</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Glazed calf's liver</span><span class="sub">with fried onion rings, baked apple, browned potatoes</span></td><td><span class="dish">焦糖小牛肝</span><span class="sub">炸洋蔥圈 + 烤蘋果 + 煎馬鈴薯</span></td><td>22.5</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Sirloin steak</span><span class="sub">with onions and fried potatoes</span></td><td><span class="dish">沙朗牛排</span><span class="sub">配洋蔥 + 煎馬鈴薯</span></td><td>27.9</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Minced veal butter schnitzel</span><span class="sub">with potato puree</span></td><td><span class="dish">小牛絞肉煎排</span><span class="sub">配薯泥</span></td><td>22.5</td></tr>
+                <tr class="veg"><td>✓ <span class="dish">Homemade spinach dumplings</span><span class="sub">with brown butter and parmesan</span></td><td><span class="dish">自製菠菜餃</span><span class="sub">焦化奶油 + 帕馬森</span></td><td>15.9</td></tr>
+                <tr class="veg"><td>✓ <span class="dish">Vegetable lentils</span><span class="sub">with roasted brioche dumpling</span></td><td><span class="dish">蔬菜扁豆</span><span class="sub">配烤布里歐麵包餃</span></td><td>14.5</td></tr>
+                <tr><td>✓ <span class="dish">Fillet of Schneeberg char</span><span class="sub">with almond butter and parsley potatoes</span></td><td><span class="dish">雪山紅點鮭魚菲力</span><span class="sub">杏仁奶油 + 巴西利馬鈴薯</span></td><td>28.5</td></tr>
+              </tbody>
+            </table>
 
-            <h4>🥗 沙拉 & 配菜 Salads &amp; Sides</h4>
-            <ul>
-              <li>小份綜合沙拉 — €6.9;稀有品種番茄沙拉 — €8.5</li>
-              <li>12 種現做沙拉任選:萵苣 / 馬鈴薯 / 番茄 / 高麗菜絲 / 紅菊苣 / 黃瓜奶油 / Frisée 苦苣 / 田野葉 / 芝麻葉 / Lollo rosso / verde / 紅蘿蔔絲</li>
-              <li>Figlmüller 薯條 €6.5;巴西利香煎馬鈴薯 €5.5;奶油飯 €5.5</li>
-              <li>醬料:番茄醬/芥末/美乃滋 €1.5;越橘果醬 €2.9;塔塔醬 €2.9</li>
-            </ul>
+            <table class="menu-tbl">
+              <caption>🥗 Salads &amp; Sides · 沙拉 &amp; 配菜</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>English</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td><span class="dish">Small mixed salad</span></td><td><span class="dish">小份綜合沙拉</span></td><td>6.9</td></tr>
+                <tr><td><span class="dish">Tomato salad from rare kinds</span></td><td><span class="dish">稀有品種番茄沙拉</span></td><td>8.5</td></tr>
+                <tr><td><span class="dish">Figlmüller Fries</span></td><td><span class="dish">Figlmüller 薯條</span></td><td>6.5</td></tr>
+                <tr><td><span class="dish">Parsley potatoes</span></td><td><span class="dish">巴西利香煎馬鈴薯</span></td><td>5.5</td></tr>
+                <tr><td><span class="dish">Butter rice</span></td><td><span class="dish">奶油飯</span></td><td>5.5</td></tr>
+                <tr><td><span class="dish">Lingonberry jam</span></td><td><span class="dish">越橘果醬</span><span class="sub">配炸排經典</span></td><td>2.9</td></tr>
+                <tr><td><span class="dish">Tartar sauce</span></td><td><span class="dish">塔塔醬</span></td><td>2.9</td></tr>
+              </tbody>
+            </table>
+            <p class="lead" style="font-size:12px; margin-top:-6px;">沙拉可從 12 種任選:Lettuce 萵苣 / Potato 馬鈴薯 / Tomato 番茄 / White cabbage 高麗菜絲 / Red endive 紅菊苣 / Cucumber 黃瓜奶油 / Frisée 苦苣 / Field 田野葉 / Rocket 芝麻葉 / Lollo rosso / Lollo verde / Carrot 紅蘿蔔絲</p>
 
-            <h4>🍰 甜點 Desserts</h4>
-            <ul>
-              <li>溫熱巧克力蛋糕(配熱巧克力醬+鮮奶油)— €10.5</li>
-              <li>⭐ <b>Kaiserschmarrn · 皇帝煎餅</b>(撕碎厚煎餅+燉李子,奧地利國民甜點,適合 2 人分)— €13.9</li>
-              <li><b>Sacher Cube · 薩赫蛋糕方塊</b>(配鮮奶油)— €8.5</li>
-            </ul>
+            <table class="menu-tbl">
+              <caption>🍰 Desserts · 甜點</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>English</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td><span class="dish">Warm chocolate cake</span><span class="sub">with warm chocolate sauce and whipped cream</span></td><td><span class="dish">溫熱巧克力蛋糕</span><span class="sub">熱巧克力醬 + 鮮奶油</span></td><td>10.5</td></tr>
+                <tr class="star"><td>⭐ <span class="dish">Kaiserschmarrn</span><span class="sub">with stewed plums</span></td><td><span class="dish">皇帝煎餅</span><span class="sub">撕碎厚煎餅 + 燉李子(份量大,2 人分剛好)</span></td><td>13.9</td></tr>
+                <tr><td><span class="dish">Sacher Cube</span><span class="sub">with whipped cream</span></td><td><span class="dish">薩赫蛋糕方塊</span><span class="sub">配鮮奶油</span></td><td>8.5</td></tr>
+              </tbody>
+            </table>
 
-            <h4>🍺 飲料(精選)</h4>
-            <ul>
-              <li>Ottakringer 拉格啤酒(維也納在地)0.3L €4.9 / 0.5L €6.9 ⭐推薦</li>
-              <li>Radler 啤酒檸檬汁 0.5L €5.9;Null Komma Josef 無酒精啤酒 €4.2</li>
-              <li>Almdudler 奧地利國民草本汽水 0.35L €4.9</li>
-              <li>葡萄酒杯裝 1/8(125ml):Grüner Veltliner、Riesling、Blaufränkisch 等 €5.9-6.9</li>
-              <li>1905 Gin & Tonic(Figlmüller 自家琴酒)— €15.9</li>
-              <li>Espresso €3.9;Melange / Cappuccino €6.5</li>
-            </ul>
+            <table class="menu-tbl">
+              <caption>🍺 Drinks(精選)· 飲料</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>English</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td><span class="dish">Ottakringer Lager</span><span class="sub">0.3L / 0.5L</span></td><td><span class="dish">奧塔克林格拉格啤酒</span><span class="sub">維也納在地啤酒 ⭐推薦</span></td><td>4.9 / 6.9</td></tr>
+                <tr><td><span class="dish">Radler</span><span class="sub">beer with lemonade, 0.5L</span></td><td><span class="dish">啤酒檸檬汁</span><span class="sub">低酒精,0.5L</span></td><td>5.9</td></tr>
+                <tr><td><span class="dish">Null Komma Josef</span><span class="sub">non-alcoholic beer, 0.33L</span></td><td><span class="dish">無酒精啤酒</span><span class="sub">0.33L</span></td><td>4.2</td></tr>
+                <tr><td><span class="dish">Almdudler</span><span class="sub">herb-flavored soft drink, 0.35L</span></td><td><span class="dish">阿爾卑斯草本汽水</span><span class="sub">奧地利國民飲料</span></td><td>4.9</td></tr>
+                <tr><td><span class="dish">Mineral water</span><span class="sub">still / sparkling, 0.33L / 0.75L</span></td><td><span class="dish">礦泉水</span><span class="sub">無氣/氣泡</span></td><td>4.1 / 7.5</td></tr>
+                <tr><td><span class="dish">House wines</span><span class="sub">Grüner Veltliner / Riesling / Blaufränkisch · 1/8 (125ml)</span></td><td><span class="dish">本店葡萄酒(杯裝)</span><span class="sub">綠維特利納 / 雷司令 / 藍弗朗克</span></td><td>5.9-6.9</td></tr>
+                <tr><td><span class="dish">1905 Gin &amp; Tonic</span><span class="sub">Figlmüller's own gin, 4cl</span></td><td><span class="dish">1905 琴湯尼</span><span class="sub">店家自釀琴酒</span></td><td>15.9</td></tr>
+                <tr><td><span class="dish">Espresso / Melange / Cappuccino</span></td><td><span class="dish">濃縮 / 維也納奶咖 / 卡布奇諾</span></td><td>3.9 / 6.5</td></tr>
+              </tbody>
+            </table>
 
             <div class="tip">
               <b>💡 6 人點菜建議</b>(配合不吃牛的女士):
               <ul style="margin:6px 0 0 0;">
-                <li><b>每人來這必點:Figlmüller-Schnitzel 招牌豬排</b>(€21.9)— 來這就是吃這個</li>
-                <li>不吃牛者:點豬排招牌(就是不吃牛友善!)或 雞肉藍帶 / 醃漬炸雞 / 雪山紅點鮭</li>
-                <li>吃牛者加碼:水煮牛肉 Tafelspitz(€28.5)或正統 Wiener Schnitzel 小牛排(€28.9)</li>
-                <li>共享配菜:Figlmüller 薯條 ×2 + 越橘果醬(配豬排)</li>
-                <li>共享甜點:Kaiserschmarrn(分 2 份夠 4 人吃)+ Sacher 方塊 ×2</li>
-                <li>飲料:Ottakringer 0.5L 在地啤酒</li>
+                <li><b>每人必點:Figlmüller-Schnitzel 招牌炸豬排</b>(€21.9)— 來這就是吃這個!</li>
+                <li>不吃牛者:豬排招牌 / Chicken Cordon Bleu 雞肉藍帶 / Marinated Viennese chicken 醃漬炸雞 / Fillet of char 紅點鮭</li>
+                <li>吃牛者加碼:Viennese boiled beef 水煮牛肉(€28.5)或 Wiener Schnitzel of veal 正統小牛排(€28.9)</li>
+                <li>共享配菜:Figlmüller Fries ×2 + Lingonberry jam(配豬排)</li>
+                <li>共享甜點:Kaiserschmarrn 皇帝煎餅(2 份 4 人分)+ Sacher Cube ×2</li>
+                <li>飲料:Ottakringer Lager 0.5L 在地啤酒</li>
               </ul>
-              <b>每人預估 €35-50</b>(含豬排+1 飲+1/3 配菜+1/3 甜點)
+              <b>每人預估 €35-50</b>(主菜 + 1 飲 + 1/3 配菜 + 1/3 甜點)
             </div>
           </div>
         </details>
       </div>
 
       <div class="card-opt highlight">
-        <div class="opt-title">2 · Plachutta Wollzeile</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Plachutta%2C%20Wollzeile%2038%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Plachutta Wollzeile</a></div>
         <div class="opt-desc">維也納 <b>Tafelspitz 水煮牛肉</b>之王,皇帝法蘭茲愛吃的名菜,分 3 輪上桌(湯+骨髓+牛肉)。Wollzeile 38。</div>
         <div class="opt-meta">€30-45/人 · <span class="chip chip-red">強烈建議訂</span> plachutta.at</div>
       </div>
 
       <div class="card-opt highlight">
-        <div class="opt-title">3 · Zwölf Apostelkeller(十二使徒酒窖)</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Zw%C3%B6lf%20Apostelkeller%2C%20Sonnenfelsgasse%203%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Zwölf Apostelkeller</a>（十二使徒酒窖）</div>
         <div class="opt-desc"><b>1561 年三層地下石砌酒窖</b>,拱頂+蠟燭氛圍,維也納最具代表的「Keller」地窖餐廳。Sonnenfelsgasse 3,史蒂芬教堂後方 2 分鐘。</div>
         <div class="opt-meta">€22-32/人 · <span class="chip chip-amber">可訂</span> zwoelf-apostelkeller.at</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">4 · Gasthaus Pöschl</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Gasthaus%20P%C3%B6schl%2C%20Weihburggasse%2017%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Gasthaus Pöschl</a></div>
         <div class="opt-desc">在地人去的小酒館,家常炸牛排+燉牛肉+Bauernschmaus 拼盤。Weihburggasse 17。</div>
         <div class="opt-meta">€25-35/人 · <span class="chip chip-amber">週末要訂</span> TheFork</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">5 · Meissl &amp; Schadn(Grand Ferdinand Hotel)</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Meissl%20Schadn%2C%20Schubertring%2010-12%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Meissl &amp; Schadn</a>（Grand Ferdinand Hotel）</div>
         <div class="opt-desc">精緻版炸牛排,桌邊現切演出、皇家氛圍,適合慶祝/紀念。Schubertring 10-12。</div>
         <div class="opt-meta">€38-58/人 · <span class="chip chip-red">強烈建議訂</span> meisslundschadn.at</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">6 · Bitzinger Würstelstand(Albertinaplatz)</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Bitzinger%20W%C3%BCrstelstand%2C%20Albertinaplatz%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Bitzinger Würstelstand</a>（Albertinaplatz）</div>
         <div class="opt-desc">歌劇院對面百年香腸攤,維也納夜生活經典,站著吃 Käsekrainer 起司香腸+芥末麵包+啤酒。</div>
         <div class="opt-meta">€5-10/人 · <span class="chip chip-green">免訂</span>,24 小時</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">7 · Naschmarkt 市集自由挑</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Naschmarkt%2C%20Linke%20Wienzeile%2C%20Wien" target="_blank" class="gmap-link">📍 Naschmarkt</a> 市集自由挑</div>
         <div class="opt-desc">輕鬆版:Neni、Deli、土耳其/海鮮/地中海小館多樣挑選。週日休。</div>
         <div class="opt-meta">€10-20/人 · <span class="chip chip-green">免訂</span></div>
       </div>
@@ -369,7 +415,7 @@
       <p class="lead">說明會 PDF 確認:Day 4 鹽湖區 Salzkammergut 會去 <b>聖吉爾根 St. Gilgen + 哈修塔特 Hallstatt</b>(下車參觀)。午餐高機率在 Hallstatt(停留 2-3 小時)。以下 6 個 Hallstatt + 1 個 St. Gilgen 選項。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · Bräugasthof Hallstatt</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Br%C3%A4ugasthof%20Hallstatt%2C%20Seestra%C3%9Fe%20120%2C%204830%20Hallstatt" target="_blank" class="gmap-link">📍 Bräugasthof Hallstatt</a></div>
         <div class="opt-desc">湖畔露台第一排,招牌烤鱒魚 Saibling,拍湖景明信片視角最好。Seestraße 120。</div>
         <div class="opt-meta">€20-35/人 · <span class="chip chip-amber">⚠️ 夏季不接受預約</span> braugasthof-hallstatt.at</div>
         <div class="warn" style="margin-top:8px;">
@@ -385,37 +431,37 @@
       </div>
 
       <div class="card-opt highlight">
-        <div class="opt-title">2 · Restaurant Seewirt Zauner</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Seehotel%20Zauner%2C%20Marktplatz%2051%2C%204830%20Hallstatt" target="_blank" class="gmap-link">📍 Restaurant Seewirt Zauner</a></div>
         <div class="opt-desc">百年老店,烤鱒魚/燉牛肉,明信片視角旁邊。Marktplatz 51。</div>
         <div class="opt-meta">€20-35/人 · <span class="chip chip-amber">建議訂</span> seehotel-zauner.at</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">3 · Gasthof Simony</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Gasthof%20Simony%2C%20Marktplatz%20105%2C%204830%20Hallstatt" target="_blank" class="gmap-link">📍 Gasthof Simony</a></div>
         <div class="opt-desc">湖畔露台,自製麵包+醃鱒魚+地方農家料理,家庭經營有味道。Marktplatz 105。</div>
         <div class="opt-meta">€20-30/人 · <span class="chip chip-amber">建議訂</span></div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">4 · Gasthaus zum Salzbaron(Heritage Hotel)</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Heritage%20Hotel%20Hallstatt%2C%20Seestra%C3%9Fe%2083%2C%204830%20Hallstatt" target="_blank" class="gmap-link">📍 Gasthaus zum Salzbaron</a>（Heritage Hotel）</div>
         <div class="opt-desc">精緻版,湖景窗邊用餐,Heritage Hotel 內,適合慶生/重要日子。</div>
         <div class="opt-meta">€25-40/人 · <span class="chip chip-amber">建議訂</span> hotel-hallstatt.com</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">5 · Restaurant zum Hallberg</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Restaurant%20zum%20Hallberg%2C%20Hallstatt" target="_blank" class="gmap-link">📍 Restaurant zum Hallberg</a></div>
         <div class="opt-desc">主街上家庭經營,傳統 Bauernschmaus 農夫拼盤(香腸+酸菜+肉+馬鈴薯),份量最大。</div>
         <div class="opt-meta">€18-28/人 · <span class="chip chip-green">免訂</span></div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">6 · Maislinger Bäckerei + 湖邊 Bratwurst 攤</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=B%C3%A4ckerei%20Maislinger%2C%20Hallstatt" target="_blank" class="gmap-link">📍 Maislinger Bäckerei</a> + 湖邊 Bratwurst 攤</div>
         <div class="opt-desc">最輕鬆快速版:Maislinger 買蘋果派/三明治 €3-5 + 熱狗堡 €5 + 啤酒 €3,邊走邊看天鵝。</div>
         <div class="opt-meta">€5-12/人 · <span class="chip chip-green">免訂</span>,15 分鐘搞定</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">7 · Fischer-Wirt(St. Gilgen · 沃夫岡湖畔)</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Fischer-Wirt%2C%20Ischler%20Stra%C3%9Fe%2021%2C%205340%20St.%20Gilgen" target="_blank" class="gmap-link">📍 Fischer-Wirt</a>（St. Gilgen · 沃夫岡湖畔）</div>
         <div class="opt-desc">沃夫岡湖畔露台烤魚,<b>莫札特媽媽出生地</b>,St. Gilgen 首選。若停 St. Gilgen 時間夠就直接吃,不用拖到 Hallstatt 才吃午餐。Ischler Straße 21。</div>
         <div class="opt-meta">€20-35/人 · <span class="chip chip-amber">建議訂</span></div>
       </div>
@@ -428,139 +474,173 @@
       <p class="lead">Day 5 早上薩爾斯堡老城 + 要塞纜車後自理午餐,下午出發去庫倫洛夫。薩爾斯堡老城 1km² 內餐廳密度極高,以下從「世界最老餐廳」到「平價老店」7 選。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · Stiftskulinarium St. Peter(803 年) ✅ 已訂位</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Stiftskulinarium%20St.%20Peter%2C%20St.-Peter-Bezirk%201/4%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Stiftskulinarium St. Peter</a>（803 年）✅ 已訂位</div>
         <div class="opt-desc">公元 <b>803 年</b>創立,查理曼大帝文獻即有記載,號稱「<b>歐洲現存最古老餐廳</b>」。聖彼得修道院內石砌拱頂酒窖 + 中庭,莫札特一家常客。招牌 Salzburger Nockerl 鹽堡雪丘甜點象徵城外三山。St.-Peter-Bezirk 1/4。</div>
         <div class="opt-meta">€30-55/人 · <span class="chip chip-green">✅ 已訂位</span> stpeter.at</div>
         <div class="tip" style="margin-top:8px;">
           <b>📋 訂位資訊</b><br>
           📅 <b>6/3 (三) 12:30 PM</b> · 👥 <b>6 人</b><br>
-          📍 St. Peter Stiftskulinarium(St. Peter Bezirk 1/4, 5020 Salzburg)<br>
+          <a href="https://maps.google.com/?q=Stiftskulinarium%20St.%20Peter%2C%20St.-Peter-Bezirk%201/4%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Stiftskulinarium St. Peter</a>（St. Peter Bezirk 1/4, 5020 Salzburg）<br>
           🔖 <b>訂位編號 #162735233</b>(Quandoo)<br>
           <span style="color:var(--muted);font-size:12px;">※ Quandoo 平台公告將於 2026/09/30 結束營運,但 6/3 訂位仍有效</span>
         </div>
 
         <details style="margin-top:10px;">
-          <summary>📜 St. Peter Stiftskulinarium 完整菜單(中文說明 · 🐄 = 含牛肉)</summary>
+          <summary>📜 St. Peter Stiftskulinarium 完整菜單(德文 / 中文並列)</summary>
           <div class="inner">
-            <p class="lead">德文菜單,菜色為現代奧地利+地中海風格。<b>🐄 = 牛/小牛</b>(不吃牛的女士避開)· <b>✓ = 安全</b> · <b>⭐ = 招牌</b>。價格皆為歐元。括號內為過敏原代碼,見最下方對照。</p>
+            <p class="lead">圖示:<b>🐄</b> = 牛/小牛肉(不吃牛者避開)· <b>✓</b> = 安全 · <b>⭐</b> = 招牌。<b>現場可直接指德文欄給服務生看</b>。價格皆為歐元。括號內為過敏原代碼,見最下方對照。</p>
 
-              <h4>🥣 前菜 · 湯 Vorspeise · Suppe</h4>
-              <ul>
-                <li>✓ <b>Blauschimmelkäse von der Ettenauer Gebirgsziege · 山羊藍紋起司</b>(胡桃+榲桲+野草沙拉)— €24.90</li>
-                <li>✓ <b>Tatar vom Yellowfin Tuna · 黃鰭鮪魚塔塔</b>(酪梨+芒果+黃瓜泡沫+炸菊苣)— €26.80</li>
-                <li>🐄 <b>Vitello Garnelo · 小牛肉佐野生紅蝦</b>(配柚子,vitello tonnato 變奏)— €25.90</li>
-                <li>✓ <b>Schaumsuppe vom Spargel · 蘆筍泡沫湯</b>(腰果奶油+酪梨泡沫)— €12.20;+ 煎扇貝 — €18.20 <span style="color:var(--green);">⭐季節限定</span></li>
-                <li>🐄 <b>Hausgemachte Tafelspitzsuppe · 自製水煮牛肉清湯</b>(配野蒜麵餃)— €8.90</li>
+            <table class="menu-tbl">
+              <caption>🥣 Vorspeise · Suppe · 前菜 &amp; 湯</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>Deutsch</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td>✓ <span class="dish">Blauschimmelkäse von der Ettenauer Gebirgsziege</span><span class="sub">Pekannuss · Quitte · Wildkräutersalat</span></td><td><span class="dish">山羊藍紋起司</span><span class="sub">胡桃 · 榲桲 · 野草沙拉</span></td><td>24.90</td></tr>
+                <tr><td>✓ <span class="dish">Tatar vom Yellowfin Tuna</span><span class="sub">Avocado · Mango · Gurkenespuma · frittierter Chicorée</span></td><td><span class="dish">黃鰭鮪魚塔塔</span><span class="sub">酪梨 · 芒果 · 黃瓜泡沫 · 炸菊苣</span></td><td>26.80</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Vitello Garnelo</span><span class="sub">Kalb · Wildfang Rotgarnele · Yuzu</span></td><td><span class="dish">小牛肉佐野生紅蝦</span><span class="sub">配柚子(vitello tonnato 變奏)</span></td><td>25.90</td></tr>
+                <tr class="star"><td>⭐ ✓ <span class="dish">Schaumsuppe vom Spargel</span><span class="sub">Cashewbutter · Avocadoespuma</span></td><td><span class="dish">蘆筍泡沫湯</span><span class="sub">腰果奶油 · 酪梨泡沫(5-6 月季節限定)</span></td><td>12.20</td></tr>
+                <tr class="star"><td>⭐ ✓ <span class="dish">Schaumsuppe + gebratene Jakobsmuschel</span></td><td><span class="dish">蘆筍泡沫湯 + 煎扇貝</span></td><td>18.20</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Hausgemachte Tafelspitzsuppe</span><span class="sub">Bärlauchknödel</span></td><td><span class="dish">自製水煮牛肉清湯</span><span class="sub">配野蒜麵餃</span></td><td>8.90</td></tr>
+              </tbody>
+            </table>
+
+            <table class="menu-tbl">
+              <caption>🥗 Salat · 沙拉(自由組合)</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>Deutsch</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td><span class="dish">Kleiner Salat</span><span class="sub">4 Komponenten</span></td><td><span class="dish">小份沙拉</span><span class="sub">4 種食材</span></td><td>9.90</td></tr>
+                <tr><td><span class="dish">Großer Salat</span><span class="sub">7 Komponenten</span></td><td><span class="dish">大份沙拉</span><span class="sub">7 種食材</span></td><td>15.20</td></tr>
+                <tr><td><span class="dish">+ Prosciutto Crudo Borghetto</span></td><td><span class="dish">+ 義式生火腿</span></td><td>10.20</td></tr>
+                <tr><td><span class="dish">+ Gebackenes Maishendlfilet</span></td><td><span class="dish">+ 炸玉米雞排</span></td><td>9.20</td></tr>
+              </tbody>
+            </table>
+            <p class="lead" style="font-size:12px; margin-top:-6px;">
+              <b>食材選擇:</b>Romanasalat 蘿蔓 / Rucolasalat 芝麻葉 / Vogerlsalat 田野葉、Radieschen 櫻桃蘿蔔、Sprossen 芽菜、Avocado 酪梨、Orangenfilet 橙肉、Gurken 黃瓜、Cocktailtomaten 烤櫻桃番茄、Schafskäse 羊起司、Oliven 橄欖、Nüsse 堅果<br>
+              <b>淋醬:</b>Kürbiskernöldressing 南瓜籽油(奧地利特產 ⭐)/ Ceasar 凱薩 / Essig &amp; Öl 油醋 / Jogurtdressing 優格
+            </p>
+
+            <table class="menu-tbl">
+              <caption>🍽️ Hauptspeise · 主菜</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>Deutsch</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr class="veg"><td>✓ <span class="dish">Hausgemachte Topfengnocchi</span><span class="sub">Taleggio · Minispinat · Birne</span></td><td><span class="dish">自製白起司丸子</span><span class="sub">Taleggio 起司 · 嫩菠菜 · 梨</span></td><td>19.20</td></tr>
+                <tr><td>✓ <span class="dish">Forelle im Ganzen gebraten</span><span class="sub">Petersilienerdäpfel</span></td><td><span class="dish">整條煎鱒魚</span><span class="sub">配巴西利馬鈴薯</span></td><td>22.90</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">Kalbsrahmgulasch</span><span class="sub">Spinatspätzle · Buchenpilze · Sauce Smetana</span></td><td><span class="dish">奶油小牛肉燉</span><span class="sub">菠菜麵疙瘩 · 樺木菇 · 酸奶油醬</span></td><td>26.80</td></tr>
+                <tr class="veg"><td>✓ <span class="dish">Kaspressknödel</span><span class="sub">Baby Leaf · Himbeere · Orangen-Senf Sabayon</span></td><td><span class="dish">起司煎餅餃</span><span class="sub">嫩葉沙拉 · 覆盆子 · 橙芥末沙巴雍</span></td><td>18.20</td></tr>
+                <tr class="veg"><td>✓ <span class="dish">Hausgemachte Tagliolini "al Pesto e asparago"</span><span class="sub">Basilikum · grüner Spargel · getrocknete Tomaten · (VEGAN 可選)</span></td><td><span class="dish">自製青醬蘆筍寬麵</span><span class="sub">羅勒 · 綠蘆筍 · 乾番茄 · 可換純素</span></td><td>21.90</td></tr>
+                <tr><td>✓ <span class="dish">Miesmuscheln im Tomaten-Wermutsud</span><span class="sub">Wurzelgemüse · Liebstöckel</span></td><td><span class="dish">番茄苦艾酒蒸淡菜</span><span class="sub">根莖菜 · 圓葉當歸</span></td><td>19.90</td></tr>
+                <tr><td>✓ <span class="dish">Gratinierter Rücken vom heimischen Lamm</span><span class="sub">Rollgerstirisotto · Zuckerschoten · Balsamico Kirschen</span></td><td><span class="dish">烤本地羔羊里脊</span><span class="sub">大麥燉飯 · 甜豆莢 · 巴薩米克櫻桃(羊非牛)</span></td><td>37.20</td></tr>
+                <tr><td>✓ <span class="dish">Piccata vom Maishendl</span><span class="sub">Tonkabohnenpolenta · Sriracha-Paprikaconfit · Speckespuma</span></td><td><span class="dish">玉米雞嫩煎排</span><span class="sub">東加豆玉米糕 · 椒香 confit · 培根泡沫</span></td><td>23.70</td></tr>
+                <tr><td><span class="dish">Brot &amp; Butter</span><span class="sub">Hausgemachtes Bauernbrot &amp; Butter des Tages</span></td><td><span class="dish">麵包 &amp; 奶油</span><span class="sub">自製農夫麵包 + 本日奶油</span></td><td>8.00</td></tr>
+              </tbody>
+            </table>
+
+            <table class="menu-tbl">
+              <caption>🌱 Weißer Spargel · 白蘆筍特餐(5-6 月限定 ⭐全國招牌)</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>Deutsch</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td>✓ <span class="dish">Weißer Spargel</span><span class="sub">Petersilierdäpfel · Sauce Hollandaise</span></td><td><span class="dish">白蘆筍(原味)</span><span class="sub">巴西利馬鈴薯 · 荷蘭醬</span></td><td>25.20</td></tr>
+                <tr><td>✓ <span class="dish">+ gebeizter Ikarimi Lachs</span></td><td><span class="dish">+ 醃漬鮭魚</span></td><td>39.90</td></tr>
+                <tr class="beef"><td>🐄 <span class="dish">+ Filet vom Salzburger Milchkalb</span></td><td><span class="dish">+ 薩爾斯堡小牛菲力</span></td><td>55.20</td></tr>
+                <tr><td>✓ <span class="dish">+ Prosciutto San Daniele</span></td><td><span class="dish">+ San Daniele 生火腿</span></td><td>35.10</td></tr>
+              </tbody>
+            </table>
+
+            <table class="menu-tbl">
+              <caption>🇦🇹 Klassiker aus Österreich · 奧地利經典</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>Deutsch</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr class="beef star"><td>🐄 ⭐ <span class="dish">Wiener Schnitzel vom Salzburger Milchkalbsrücken</span><span class="sub">Petersilienerdäpfel</span></td><td><span class="dish">薩爾斯堡小牛炸排</span><span class="sub">維也納炸排正統版 · 小牛背肉 · 配巴西利馬鈴薯</span></td><td>33.90</td></tr>
+                <tr><td><span class="dish">Preiselbeeren</span></td><td><span class="dish">越橘果醬</span><span class="sub">配炸排經典</span></td><td>4.20</td></tr>
+                <tr class="beef star"><td>🐄 ⭐ <span class="dish">Gekochter Tafelspitz vom Salzburger Biorind in der Kupferpfanne</span><span class="sub">Semmelkren · Rahmspinat · Apfelkren · Schnittlauchsauce</span></td><td><span class="dish">銅鍋水煮有機牛肉</span><span class="sub">麵包辣根 · 奶油菠菜 · 蘋果辣根 · 細香蔥醬(法蘭茲皇帝愛)</span></td><td>29.90</td></tr>
+              </tbody>
+            </table>
+
+            <table class="menu-tbl">
+              <caption>🍰 Dessert · 甜點</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>Deutsch</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td><span class="dish">Crème Brûlée St. Peter</span><span class="sub">Malz · Rosmarin · Sorbet des Tages</span></td><td><span class="dish">焦糖布丁 St. Peter</span><span class="sub">麥芽 · 迷迭香 · 本日雪酪</span></td><td>12.90</td></tr>
+                <tr><td><span class="dish">Parfait vom weißen Nougat</span><span class="sub">Baklava · Rhabarber</span></td><td><span class="dish">白牛軋糖芭菲</span><span class="sub">巴卡瓦 · 大黃</span></td><td>13.90</td></tr>
+                <tr><td><span class="dish">Hausgemachter Apfelstrudel</span><span class="sub">Vanilleeis oder Vanillesauce</span></td><td><span class="dish">自製蘋果捲</span><span class="sub">配香草冰 或 香草醬</span></td><td>7.90</td></tr>
+                <tr class="star"><td>⭐⭐ <span class="dish">Salzburger Nockerl</span><span class="sub">Grant'n-Schlagobers · <b>Zubereitungszeit 25 Minuten</b></span></td><td><span class="dish">薩爾斯堡鹽堡雪丘</span><span class="sub">越橘鮮奶油 · <b>25 分鐘現做!點完馬上講要做</b></span></td><td>24.90</td></tr>
+                <tr><td><span class="dish">Erlesener Käse Feinkost Kaslöchl</span><span class="sub">Bitte wählen Sie aus unserer Käsekarte</span></td><td><span class="dish">起司精選</span><span class="sub">從起司車選</span></td><td>—</td></tr>
+              </tbody>
+            </table>
+
+            <table class="menu-tbl">
+              <caption>🥂 Prickelnder Start · 開胃氣泡(單杯)</caption>
+              <colgroup><col class="col-orig"><col class="col-zh"><col class="col-price"></colgroup>
+              <thead><tr><th>Deutsch</th><th>中文</th><th>€</th></tr></thead>
+              <tbody>
+                <tr><td><span class="dish">Bollinger Special Cuvée</span></td><td><span class="dish">堡林爵特選香檳</span></td><td>15.90</td></tr>
+                <tr><td><span class="dish">Bollinger Rosé</span></td><td><span class="dish">堡林爵粉紅香檳</span></td><td>18.90</td></tr>
+                <tr><td><span class="dish">Langlois Crémant de Loire Blanc</span></td><td><span class="dish">羅亞爾河氣泡白</span></td><td>9.90</td></tr>
+                <tr><td><span class="dish">Langlois Crémant de Loire Rosé</span></td><td><span class="dish">羅亞爾河粉紅氣泡</span></td><td>10.90</td></tr>
+                <tr><td><span class="dish">Tement Muskat Frizzante</span></td><td><span class="dish">蒂門特蜜思嘉微氣泡</span><span class="sub">奧地利在地 ⭐</span></td><td>9.20</td></tr>
+                <tr><td><span class="dish">Ecker-Eckhof Blanc de Blancs Brut</span></td><td><span class="dish">埃克霍夫白中白</span></td><td>9.90</td></tr>
+              </tbody>
+            </table>
+
+            <div class="warn">
+              <b>🚨 過敏原代碼對照</b>(德文菜單上常見小括號標示):<br>
+              A 麩質穀物 · B 甲殼類 · C 蛋 · D 魚 · E 花生 · F 大豆 · G 奶/乳製品 · H 堅果 · L 芹菜 · M 芥末 · N 芝麻 · O 二氧化硫 · P 羽扇豆 · R 軟體動物
+            </div>
+
+            <div class="tip">
+              <b>💡 6 人點菜建議</b>(配合不吃牛的女士):
+              <ul style="margin:6px 0 0 0;">
+                <li><b>必點甜點(全桌共享):Salzburger Nockerl 鹽堡雪丘(€24.90)</b>— <b>全奧地利只有薩爾斯堡有</b>!25 分鐘現做,<b>剛點主菜時就要先講</b>,2-3 人分</li>
+                <li>不吃牛者:<b>Forelle 整條煎鱒魚(€22.90)</b> / <b>Piccata vom Maishendl 玉米雞(€23.70)</b> / <b>Lamm 羔羊里脊(€37.20)</b> / <b>白蘆筍+鮭魚(€39.90)</b></li>
+                <li>吃牛者必點招牌(2 選 1):<b>Wiener Schnitzel 薩爾斯堡小牛炸排(€33.90)</b> 或 <b>Tafelspitz 銅鍋水煮牛肉(€29.90)</b></li>
+                <li>前菜分食:<b>Schaumsuppe vom Spargel 蘆筍泡沫湯(€12.20)</b> 5-6 月才有!或 <b>Tatar vom Yellowfin Tuna 鮪魚塔塔(€26.80)</b></li>
+                <li>沙拉:Großer Salat 大份(€15.20)+ 南瓜籽油淋醬(全桌分食)</li>
+                <li>飲料:正中午建議 <b>Tement Muskat Frizzante 氣泡(€9.20)</b> 慶祝,或 Almdudler 草本汽水</li>
+                <li>加單 <b>Brot &amp; Butter 農夫麵包 €8.00</b>(配湯)</li>
               </ul>
-
-              <h4>🥗 沙拉 Salat — 自由組合</h4>
-              <ul>
-                <li><b>小份 4 種食材 €9.90</b> / <b>大份 7 種食材 €15.20</b></li>
-                <li>食材選擇:蘿蔓 / 芝麻葉 / 田野葉、櫻桃蘿蔔、芽菜、酪梨、橙肉、黃瓜、烤櫻桃番茄、羊起司、橄欖、堅果</li>
-                <li>淋醬:<b>南瓜籽油</b>(奧地利特產)、凱薩、油醋、優格</li>
-                <li>加料:Prosciutto Crudo 生火腿 €10.20 / Maishendlfilet 炸玉米雞 €9.20</li>
-              </ul>
-
-              <h4>🍽️ 主菜 Hauptspeise</h4>
-              <ul>
-                <li>✓ <b>Hausgemachte Topfengnocchi · 自製白起司丸子</b>(Taleggio 起司+嫩菠菜+梨)— €19.20</li>
-                <li>✓ <b>Forelle im Ganzen gebraten · 整條煎鱒魚</b>(配巴西利馬鈴薯)— €22.90</li>
-                <li>🐄 <b>Kalbsrahmgulasch · 奶油小牛肉燉</b>(菠菜麵疙瘩+樺木菇+酸奶油醬)— €26.80</li>
-                <li>✓ <b>Kaspressknödel · 起司煎餅餃</b>(嫩葉沙拉+覆盆子+橙芥末沙巴雍)— €18.20</li>
-                <li>✓ <b>Tagliolini "al Pesto e asparago" · 青醬蘆筍寬麵</b>(羅勒+綠蘆筍+乾番茄;可換純素)— €21.90</li>
-                <li>✓ <b>Miesmuscheln im Tomaten-Wermutsud · 番茄苦艾酒蒸淡菜</b>(根莖菜+圓葉當歸)— €19.90</li>
-                <li>✓ <b>Gratinierter Rücken vom heimischen Lamm · 烤本地羔羊里脊</b>(大麥燉飯+甜豆莢+巴薩米克櫻桃)— €37.20 <span style="color:var(--muted);">※ 羊不是牛,不吃牛者可吃</span></li>
-                <li>✓ <b>Piccata vom Maishendl · 玉米雞嫩煎排</b>(東加豆玉米糕+椒香 confit+培根泡沫)— €23.70</li>
-                <li><b>Brot &amp; Butter · 自製農夫麵包+本日奶油</b> — €8.00</li>
-              </ul>
-
-              <h4>🌱 白蘆筍特餐 Weißer Spargel(<span style="color:var(--green);">5-6 月季節限定 · 全國招牌菜!</span>)</h4>
-              <ul>
-                <li>✓ 白蘆筍+巴西利馬鈴薯+荷蘭醬(原味)— €25.20</li>
-                <li>✓ + 醃漬 Ikarimi 鮭魚 — €39.90</li>
-                <li>🐄 + 薩爾斯堡小牛菲力 — €55.20</li>
-                <li>✓ + San Daniele 生火腿 — €35.10</li>
-              </ul>
-
-              <h4>🇦🇹 奧地利經典 Klassiker aus Österreich</h4>
-              <ul>
-                <li>🐄 ⭐ <b>Wiener Schnitzel vom Salzburger Milchkalbsrücken · 薩爾斯堡小牛炸排</b>(維也納炸排正統版,小牛背肉+巴西利馬鈴薯)— €33.90</li>
-                <li>越橘果醬 Preiselbeeren — €4.20(配炸排經典)</li>
-                <li>🐄 ⭐ <b>Gekochter Tafelspitz vom Salzburger Biorind · 銅鍋水煮有機牛肉</b>(配麵包辣根、奶油菠菜、蘋果辣根、細香蔥醬,法蘭茲皇帝愛)— €29.90</li>
-              </ul>
-
-              <h4>🍰 甜點 Dessert</h4>
-              <ul>
-                <li>Crème Brûlée St. Peter(麥芽+迷迭香+本日雪酪)— €12.90</li>
-                <li>Parfait vom weißen Nougat · 白牛軋糖芭菲(配巴卡瓦+大黃)— €13.90</li>
-                <li>Apfelstrudel · 自製蘋果捲(配香草冰或香草醬)— €7.90</li>
-                <li>⭐⭐ <b>Salzburger Nockerl · 薩爾斯堡鹽堡雪丘</b>(三座蛋白霜山丘象徵城外三山,Granten 越橘鮮奶油配料,<b>25 分鐘現做</b>)— €24.90 <span style="color:var(--red);">招牌!點完馬上跟服務生講要做!</span></li>
-                <li>Käse Feinkost Kaslöchl · 起司精選(從起司車選)</li>
-              </ul>
-
-              <h4>🥂 開胃氣泡(單杯)Prickelnder Start</h4>
-              <ul>
-                <li>Bollinger Special Cuvée 香檳 — €15.90</li>
-                <li>Bollinger Rosé 粉紅香檳 — €18.90</li>
-                <li>Langlois Crémant de Loire Blanc / Rosé — €9.90 / €10.90</li>
-                <li>Tement Muskat Frizzante(奧地利在地)— €9.20</li>
-                <li>Ecker-Eckhof Blanc de Blancs Brut — €9.90</li>
-              </ul>
-
-              <div class="warn">
-                <b>🚨 過敏原代碼對照</b>(德文菜單上常見小括號標示):<br>
-                A 麩質穀物 · B 甲殼類 · C 蛋 · D 魚 · E 花生 · F 大豆 · G 奶/乳製品 · H 堅果 · L 芹菜 · M 芥末 · N 芝麻 · O 二氧化硫 · P 羽扇豆 · R 軟體動物
-              </div>
-
-              <div class="tip">
-                <b>💡 6 人點菜建議</b>(配合不吃牛的女士):
-                <ul style="margin:6px 0 0 0;">
-                  <li><b>必點甜點(全桌共享):Salzburger Nockerl 鹽堡雪丘(€24.90)</b>— <b>全奧地利只有薩爾斯堡有</b>!25 分鐘現做,<b>剛點主菜時就要先講</b>,適合 2-3 人分</li>
-                  <li>不吃牛者:<b>整條煎鱒魚(€22.90)</b> / <b>玉米雞嫩煎排(€23.70)</b> / <b>羔羊里脊(€37.20)</b> / <b>白蘆筍+鮭魚(€39.90)</b></li>
-                  <li>吃牛者必點招牌(2 選 1):<b>薩爾斯堡小牛炸排(€33.90)</b> 或 <b>銅鍋水煮牛肉 Tafelspitz(€29.90)</b></li>
-                  <li>前菜分食:<b>蘆筍泡沫湯(€12.20)</b> 5-6 月才有!或 <b>鮪魚塔塔(€26.80)</b></li>
-                  <li>沙拉:大份 €15.20 + 南瓜籽油淋醬(全桌分食)</li>
-                  <li>飲料:正中午建議 <b>Tement Muskat Frizzante 氣泡(€9.20)</b> 慶祝一下,或 Almdudler 草本汽水</li>
-                  <li>加單 Brot &amp; Butter 農夫麵包 €8.00(配湯)</li>
-                </ul>
-                <b>每人預估 €60-80</b>(前菜 1/3 + 主菜 + 飲料 + 甜點 1/2 + 沙拉 1/6)
-              </div>
+              <b>每人預估 €60-80</b>(前菜 1/3 + 主菜 + 飲料 + 甜點 1/2 + 沙拉 1/6)
+            </div>
           </div>
         </details>
       </div>
 
       <div class="card-opt highlight">
-        <div class="opt-title">2 · Zum Eulenspiegel</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Zum%20Eulenspiegel%2C%20Hagenauerplatz%202%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Zum Eulenspiegel</a></div>
         <div class="opt-desc">莫札特出生地正對面的 500+ 年古宅餐廳,多層樓小房間,傳統薩爾斯堡料理(小牛肉、Kaiserschmarrn 皇帝煎餅)。Hagenauerplatz 2。</div>
         <div class="opt-meta">€25-40/人 · <span class="chip chip-red">強烈建議訂</span> zum-eulenspiegel.at</div>
       </div>
 
       <div class="card-opt highlight">
-        <div class="opt-title">3 · Augustiner Bräustübl(1621)</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Augustiner%20Br%C3%A4ust%C3%BCbl%2C%20Lindhofstra%C3%9Fe%207%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Augustiner Bräustübl</a>（1621）</div>
         <div class="opt-desc">1621 年奧斯定修道院自釀啤酒屋,木桌大廳+自助熟食攤(烤豬肘/起司麵包/薩爾斯堡捲),半公升啤酒 €4.4 超平價。走路 15 分鐘或計程車 5 分鐘。Lindhofstraße 7。</div>
         <div class="opt-meta">€15-25/人 · <span class="chip chip-green">免訂</span>,自助式</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">4 · Gasthof Goldgasse(巷中巷)</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Gasthof%20Goldgasse%2C%20Goldgasse%2010%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Gasthof Goldgasse</a>（巷中巷）</div>
         <div class="opt-desc">老城黃金巷 Goldgasse 上的精緻飯店餐廳,薩爾斯堡慢食運動代表,小牛肉捲+南瓜籽油沙拉。Goldgasse 10。</div>
         <div class="opt-meta">€28-45/人 · <span class="chip chip-amber">建議訂</span> hotelgoldgasse.at</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">5 · Stieglkeller(1820)· 要塞山下啤酒花園</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Stieglkeller%2C%20Festungsgasse%2010%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Stieglkeller</a>（1820）· 要塞山下啤酒花園</div>
         <div class="opt-desc">奧地利第一大品牌 Stiegl 直營,要塞山腳露天花園俯瞰老城,烤豬肘+起司餃子 Kasnocken,天氣好超殺。Festungsgasse 10。</div>
         <div class="opt-meta">€20-35/人 · <span class="chip chip-amber">建議訂</span> stieglkeller.at</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">6 · Balkan Grill(Bosna 三明治之父)</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Balkan%20Grill%2C%20Getreidegasse%2033%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Balkan Grill</a>（Bosna 三明治之父）</div>
         <div class="opt-desc">1950 年起小攤,<b>Bosna 香腸堡</b>發源地,兩根香腸+洋蔥+咖哩麵包夾起來,€6 一份,排隊快速解決。Getreidegasse 33 院內小巷。</div>
         <div class="opt-meta">€6-10/人 · <span class="chip chip-green">免訂</span>,10 分鐘搞定</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">7 · Café Tomaselli(1700)</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Caf%C3%A9%20Tomaselli%2C%20Alter%20Markt%209%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Café Tomaselli</a>（1700）</div>
         <div class="opt-desc">莫札特常去的 1700 年百年咖啡館,Einspänner 濃縮 + Apfelstrudel 蘋果捲,簡餐三明治,氣氛 > 飽肚感,適合輕午餐。Alter Markt 9。</div>
         <div class="opt-meta">€15-25/人 · <span class="chip chip-green">免訂</span></div>
       </div>
@@ -575,43 +655,43 @@
       <p class="lead">午餐剛吃過遊船百匯,晚上回舊城/小城區自由。10 天最閒的一餐,氣氛值得投資。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · U Fleků(1499)</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=U%20Flek%C5%AF%2C%20K%C5%99emencova%2011%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 U Fleků</a>（1499）</div>
         <div class="opt-desc"><b>525 年自釀啤酒屋</b>,獨家 13° 黑啤、手風琴樂團現場演奏、地窖+庭院多廳,布拉格啤酒朝聖地。Křemencova 11。</div>
         <div class="opt-meta">CZK 450-700/人 · <span class="chip chip-red">強烈建議訂</span> ufleku.cz</div>
       </div>
 
       <div class="card-opt highlight">
-        <div class="opt-title">2 · Lokál Dlouháááá</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Lok%C3%A1l%20Dlouh%C3%A1%C3%A1%C3%A1%C3%A1%2C%20Dlouh%C3%A1%2033%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Lokál Dlouháááá</a></div>
         <div class="opt-desc">捷克國民連鎖,Pilsner Urquell 現打生啤+燉牛肉 Svíčková 與烤豬膝,<b>CP 最高</b>。Dlouhá 33。</div>
         <div class="opt-meta">CZK 350-500/人 · <span class="chip chip-red">強烈建議訂</span> lokal-dlouha.ambi.cz</div>
       </div>
 
       <div class="card-opt highlight">
-        <div class="opt-title">3 · U Medvídků(1466)</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=U%20Medv%C3%ADdk%C5%AF%2C%20Na%20Per%C5%A1t%C3%BDn%C4%9B%207%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 U Medvídků</a>（1466）</div>
         <div class="opt-desc">百年釀酒餐館,自家 X-Beer 33(世界最烈啤酒之一)+烤鴨腿/燉牛膝,地窖氛圍濃。Na Perštýně 7。</div>
         <div class="opt-meta">CZK 450-700/人 · <span class="chip chip-amber">建議訂</span> umedvidku.cz</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">4 · U Modré kachničky(藍鴨子)</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=U%20Modr%C3%A9%20kachni%C4%8Dky%2C%20Nebovidsk%C3%A1%206%2C%20118%2000%20Praha" target="_blank" class="gmap-link">📍 U Modré kachničky</a>（藍鴨子）</div>
         <div class="opt-desc">小城區老宅優雅烤鴨,低調古典,適合夫妻/長輩慶祝,比 U Fleků 安靜。Nebovidská 6。</div>
         <div class="opt-meta">CZK 600-900/人 · <span class="chip chip-red">強烈建議訂</span> umodrekachnicky.cz</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">5 · Mlejnice(舊城區)</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Mlejnice%2C%20Ko%C5%BEn%C3%A1%2014%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Mlejnice</a>（舊城區）</div>
         <div class="opt-desc">近查理大橋,老建築木梁氛圍,捷克家常菜穩定好吃,觀光客友好。Kožná 14。</div>
         <div class="opt-meta">CZK 400-600/人 · <span class="chip chip-amber">可訂</span> restaurace-mlejnice.cz</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">6 · Kolkovna Celnice</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Kolkovna%20Celnice%2C%20V%20Celnici%204%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Kolkovna Celnice</a></div>
         <div class="opt-desc">老字號連鎖(粉紅象啤酒 Pilsner 旗下),烤豬膝+生啤水準穩定,共和國廣場旁,購物完最方便。V Celnici 4。</div>
         <div class="opt-meta">CZK 350-550/人 · <span class="chip chip-amber">可訂</span> kolkovna-celnice.cz</div>
       </div>
 
       <div class="card-opt">
-        <div class="opt-title">7 · V Zátiší</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=V%20Z%C3%A1ti%C5%A1%C3%AD%2C%20Liliov%C3%A1%201%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 V Zátiší</a></div>
         <div class="opt-desc">米其林推薦的精緻版捷克菜,Tasting Menu 體驗現代捷克料理,奢華壓軸版。Liliová 1。</div>
         <div class="opt-meta">CZK 900-1,500/人 · <span class="chip chip-red">強烈建議訂</span> vzatisi.cz</div>
       </div>
@@ -636,23 +716,23 @@
         <div class="opt-desc">Billa/Spar/Hofer 買水、水果、優格、Manner 巧克力,之後車上或房裡吃。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">3 · Staatsoper 歌劇院夜景</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Wiener%20Staatsoper%2C%20Opernring%202%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Staatsoper 歌劇院</a> 夜景</div>
         <div class="opt-desc">搭 U-Bahn U1/U2/U4 到 Karlsplatz,歌劇院外觀打燈 1 小時即可往返。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">4 · Karlskirche 查爾斯教堂夜景</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Karlskirche%2C%20Karlsplatz%2C%201040%20Wien" target="_blank" class="gmap-link">📍 Karlskirche</a> 查爾斯教堂夜景</div>
         <div class="opt-desc">歐洲最美巴洛克教堂之一,前方水池倒影+夜燈極美。免費外觀。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">5 · Prater 百年摩天輪</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Wiener%20Riesenrad%2C%20Prater%2090%2C%201020%20Wien" target="_blank" class="gmap-link">📍 Prater Riesenrad 百年摩天輪</a></div>
         <div class="opt-desc">U1 一站到 Praterstern,€15 搭 1879 年的木造摩天輪,維也納夜景全景。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">6 · 多瑙運河 Donaukanal 夜散</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Donaukanal%2C%20Wien" target="_blank" class="gmap-link">📍 Donaukanal 多瑙運河</a> 夜散</div>
         <div class="opt-desc">運河兩岸的塗鴉酒吧街 + 露天沙灘吧(Adria Wien、Motto am Fluss),年輕人夜晚聚集地。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">7 · 霍夫堡宮+英雄廣場夜景</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Heldenplatz%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Hofburg / Heldenplatz 霍夫堡宮+英雄廣場</a> 夜景</div>
         <div class="opt-desc">Heldenplatz 英雄廣場夜晚空曠壯觀,打燈哈布斯堡皇宮最有氣勢。免費。</div>
       </div>
     </div>
@@ -662,35 +742,35 @@
     <summary>Day 3 (6/1 一) · 維也納自理晚餐前/後</summary>
     <div class="inner">
       <div class="card-opt highlight">
-        <div class="opt-title">1 · 國立歌劇院 Staatsoper 站票</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Wiener%20Staatsoper%2C%20Opernring%202%2C%201010%20Wien" target="_blank" class="gmap-link">📍 國立歌劇院 Staatsoper</a> 站票</div>
         <div class="opt-desc">€10-18 聽世界級歌劇或芭蕾,每場限量站票,開演前 80 分鐘現場排隊。wiener-staatsoper.at 查當日節目。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">2 · Prater 百年摩天輪(Riesenrad)</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Wiener%20Riesenrad%2C%20Prater%2090%2C%201020%20Wien" target="_blank" class="gmap-link">📍 Prater Riesenrad 百年摩天輪</a></div>
         <div class="opt-desc">€15,21:00 後夜景最美,VIP 車廂可包下吃晚餐(€199 起,要預訂)。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">3 · Café Central / Demel 百年甜點</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Caf%C3%A9%20Central%2C%20Herrengasse%2014%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Café Central</a> / <a href="https://maps.google.com/?q=Demel%2C%20Kohlmarkt%2014%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Demel</a> 百年甜點</div>
         <div class="opt-desc">Central 21:30 關(週日 17:00);Demel 19:00 關。蘋果捲 Apfelstrudel + Melange。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">4 · Donauturm 多瑙塔夜景</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Donauturm%2C%20Donauturmstra%C3%9Fe%204%2C%201220%20Wien" target="_blank" class="gmap-link">📍 Donauturm 多瑙塔</a> 夜景</div>
         <div class="opt-desc">252m 高觀景塔,€17.5 含旋轉餐廳座位,維也納+多瑙河+遠眺維也納森林夜景。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">5 · Albertina 美術館週三/週五延長開放</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Albertina%2C%20Albertinaplatz%201%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Albertina 美術館</a> 週三/週五延長開放</div>
         <div class="opt-desc">週三、週五開到 21:00,莫內《睡蓮》、德加、畢卡索等名作,€19.9。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">6 · Kahlenberg 卡倫山夜景</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Kahlenberg%2C%201190%20Wien" target="_blank" class="gmap-link">📍 Kahlenberg 卡倫山</a> 夜景</div>
         <div class="opt-desc">公車 38A 從 Heiligenstadt 上山,俯瞰維也納全景+多瑙河,免費。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">7 · Heuriger 維也納森林酒館(Grinzing 區)</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Mayer%20am%20Pfarrplatz%2C%20Pfarrplatz%202%2C%201190%20Wien" target="_blank" class="gmap-link">📍 Mayer am Pfarrplatz</a> / <a href="https://maps.google.com/?q=Fuhrgassl-Huber%2C%20Rathstra%C3%9Fe%2024%2C%201190%20Wien" target="_blank" class="gmap-link">📍 Fuhrgassl-Huber</a> Heuriger 維也納森林酒館（Grinzing 區）</div>
         <div class="opt-desc">計程車 15 分鐘到 Grinzing,Mayer am Pfarrplatz 或 Fuhrgassl-Huber,自釀葡萄酒+冷肉拼盤+手風琴。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">8 · Rathausplatz 市政廳廣場夜景</div>
+        <div class="opt-title">8 · <a href="https://maps.google.com/?q=Rathausplatz%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Rathausplatz 市政廳廣場</a> 夜景</div>
         <div class="opt-desc">哥德式市政廳打燈極美,廣場夏季常有露天放映或市集。免費。</div>
       </div>
     </div>
@@ -702,31 +782,31 @@
       <p class="lead">哈修塔特午餐自理後,下午到薩爾斯堡市區走一小段,晚上吃完中式,可再出來散步 1-2 小時(老城區離飯店很近)。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · Getreidegasse 穀物街夜散</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Getreidegasse%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Getreidegasse 穀物街</a> 夜散</div>
         <div class="opt-desc">薩爾斯堡最熱鬧老街,莫札特出生地 Mozart's Geburtshaus 在 No.9,招牌鑄鐵看板拍到飽,免費。</div>
       </div>
       <div class="card-opt highlight">
-        <div class="opt-title">2 · Hohensalzburg 要塞夜景(山下仰拍)</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Kapitelplatz%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Hohensalzburg / Kapitelplatz</a> 要塞夜景（山下仰拍）</div>
         <div class="opt-desc">纜車已 17:00 左右停駛,晚上就從 Kapitelplatz 或 Mirabell 花園仰拍打燈城堡。免費。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">3 · Mirabell 米拉貝爾花園 + 宮殿夜景</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Mirabellgarten%2C%20Mirabellplatz%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Mirabellgarten 米拉貝爾花園</a> + 宮殿夜景</div>
         <div class="opt-desc">真善美「Do-Re-Mi」拍攝地,花園 24 小時開放打燈,對面的城堡構圖最美。免費。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">4 · Augustiner Bräustübl(奧斯定修道院啤酒屋)</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Augustiner%20Br%C3%A4ust%C3%BCbl%2C%20Lindhofstra%C3%9Fe%207%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Augustiner Bräustübl</a>（奧斯定修道院啤酒屋）</div>
         <div class="opt-desc">1621 年修道院自釀啤酒,木桌大廳 + 自助熟食攤,半公升 €4.4 超平價,23:00 打烊。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">5 · Café Tomaselli 百年咖啡館</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Caf%C3%A9%20Tomaselli%2C%20Alter%20Markt%209%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Café Tomaselli</a> 百年咖啡館</div>
         <div class="opt-desc">1700 年開業,莫札特也去過,Einspänner 濃縮咖啡 + 蘋果捲 Apfelstrudel,週間至 20:00。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">6 · Salzach 河畔+ Staatsbrücke 橋夜景</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Staatsbr%C3%BCcke%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Staatsbrücke</a> Salzach 河畔夜景</div>
         <div class="opt-desc">鎖橋對岸仰拍老城+城堡打燈,經典明信片構圖,免費。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">7 · Stiegl-Brauwelt 啤酒博物館旗艦店</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Stiegl%20Brauwelt%2C%20Br%C3%A4uhausstra%C3%9Fe%209%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Stiegl-Brauwelt</a> 啤酒博物館旗艦店</div>
         <div class="opt-desc">奧地利第一大啤酒品牌,郊區博物館多 18:00 關;市區專賣店可買紀念杯、限定酒。</div>
       </div>
     </div>
@@ -738,35 +818,35 @@
       <p class="lead">Day 5 晚餐「特色燒烤三道式」在庫倫洛夫,<b>高機率就是 Krčma Šatlava</b> 中世紀地窖 BBQ —— 所以想去 Šatlava 的人不用另外去,團餐會帶。6 月日落 20:45,整個小鎮金色。CK 是 1992 UNESCO,伏爾他瓦河形成 S 型河灣把小鎮分成「城堡區」與「舊城區」。8 件事任選。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · 彩繪塔 Castle Tower 登塔</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=%C4%8Cesk%C3%BD%20Krumlov%20Castle%20Tower%2C%20Z%C3%A1mek%2059%2C%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 彩繪塔 Castle Tower</a> 登塔</div>
         <div class="opt-desc">CZK 80,360° 看紅瓦小鎮與 S 型河灣,必拍地標。務必 18:00 前上塔。</div>
       </div>
       <div class="card-opt highlight">
-        <div class="opt-title">2 · 斗篷橋 + 城堡花園 Seminární zahrada 日落觀景台</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Z%C3%A1meck%C3%A1%20zahrada%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 斗篷橋 / Seminární zahrada</a> 日落觀景台</div>
         <div class="opt-desc">免費,最佳日落點,整個小鎮金色倒影,6 月 20:45 日落,建議 19:30 到。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">3 · Trdelník 煙囪捲當點心</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Trdeln%C3%ADk%2C%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Trdelník 煙囪捲</a> 當點心</div>
         <div class="opt-desc">CZK 80-150,夾冰淇淋/莓果/巧克力,挑現烤現擀的店,邊走邊吃最搭。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">4 · Eggenberg Brewery 艾根堡啤酒廠</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Pivovar%20Eggenberg%2C%20Latr%C3%A1n%2027%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Eggenberg Brewery</a> 艾根堡啤酒廠</div>
         <div class="opt-desc">14 世紀皇家啤酒廠,導覽 CZK 170(最晚 16:00),參觀不及的話可在啤酒花園喝一杯。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">5 · Egon Schiele Art Centrum</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Egon%20Schiele%20Art%20Centrum%2C%20%C5%A0irok%C3%A1%2071%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Egon Schiele Art Centrum</a></div>
         <div class="opt-desc">席勒(克林姆弟子)美術館,收藏他在 CK 的作品,開到 18:00,CZK 200。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">6 · Museum Fantastikum 魔幻博物館</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Museum%20Fantastikum%2C%20Horn%C3%AD%20154%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Museum Fantastikum</a> 魔幻博物館</div>
         <div class="opt-desc">視覺錯覺/3D 拍照館,適合親子,輕鬆 45 分鐘,CZK 190。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">7 · Vltava 河上木筏 / 獨木舟</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=P%C5%AFj%C4%8Dovna%20Malecek%2C%20Rooseveltova%2028%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Půjčovna Malecek 木筏/獨木舟</a> Vltava 河上木筏/獨木舟</div>
         <div class="opt-desc">Malecek 公司,45 分鐘繞小鎮 CZK 300-500,夏季限定(5-9 月),最後一班約 18:00。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">8 · 夜拍 Latrán 街老鎮</div>
+        <div class="opt-title">8 · <a href="https://maps.google.com/?q=Latr%C3%A1n%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Latrán 街老鎮</a> 夜拍</div>
         <div class="opt-desc">城堡下的 Latrán 老街打燈後石頭路特別有味,免費散步+喝杯在地酒館。</div>
       </div>
     </div>
@@ -778,27 +858,27 @@
       <p class="lead">從庫倫洛夫一路玩波希米亞小鎮到布拉格,晚上吃完中式約 20:00,第一次踏進布拉格舊城。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · 舊城廣場 + 天文鐘 21:00 整點秀</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Starom%C4%9Bstsk%C3%A9%20n%C3%A1m%C4%9Bst%C3%AD%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 舊城廣場 Old Town Square</a> + <a href="https://maps.google.com/?q=Prague%20Astronomical%20Clock%2C%20Old%20Town%20Hall%2C%20Praha" target="_blank" class="gmap-link">📍 天文鐘 Astronomical Clock</a> 21:00 整點秀</div>
         <div class="opt-desc">抵達布拉格第一晚的儀式感,提恩教堂+火藥塔打燈,整點 12 使徒移動秀人少更好拍。免費。</div>
       </div>
       <div class="card-opt highlight">
-        <div class="opt-title">2 · 查理大橋夜景+伏爾他瓦河畔</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Charles%20Bridge%2C%20Karl%C5%AFv%20most%2C%20Praha" target="_blank" class="gmap-link">📍 查理大橋 Charles Bridge</a> 夜景+伏爾他瓦河畔</div>
         <div class="opt-desc">打燈後橋上人少 10 倍,30 座聖人雕像 + 城堡白光,最經典布拉格構圖,免費。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">3 · U Medvídků 百年啤酒屋小酌</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=U%20Medv%C3%ADdk%C5%AF%2C%20Na%20Per%C5%A1t%C3%BDn%C4%9B%207%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 U Medvídků</a> 百年啤酒屋小酌</div>
         <div class="opt-desc">已吃飽的話就來喝一杯 X-Beer 33(世界最烈啤酒之一),Na Perštýně 7,23:00 打烊。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">4 · Powder Tower 火藥塔+市民會館外觀</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Prague%20Powder%20Tower%2C%20n%C3%A1m%C4%9Bst%C3%AD%20Republiky%2C%20Praha" target="_blank" class="gmap-link">📍 Powder Tower 火藥塔</a> + <a href="https://maps.google.com/?q=Obecn%C3%AD%20d%C5%AFm%2C%20n%C3%A1m%C4%9Bst%C3%AD%20Republiky%205%2C%20Praha" target="_blank" class="gmap-link">📍 市民會館 Obecní dům</a> 外觀</div>
         <div class="opt-desc">共和國廣場旁,哥德+新藝術兩棟經典建築並立,夜燈打出金綠色澤,免費。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">5 · Wenceslas Square 瓦茨拉夫廣場散步</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=V%C3%A1clavsk%C3%A9%20n%C3%A1m%C4%9Bst%C3%AD%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Wenceslas Square 瓦茨拉夫廣場</a> 散步</div>
         <div class="opt-desc">新城主大道,國家博物館打燈+聖瓦茨拉夫騎馬像,商店 21:00-22:00 關,可順道逛。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">6 · Kavárna Slavia 百年文學咖啡館</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Kav%C3%A1rna%20Slavia%2C%20Smetanovo%20n%C3%A1b%C5%99e%C5%BE%C3%AD%202%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Kavárna Slavia</a> 百年文學咖啡館</div>
         <div class="opt-desc">Národní 大街口,哈維爾總統、詩人 Seifert 常去,河景露台看城堡夜景,至 23:00。</div>
       </div>
       <div class="card-opt">
@@ -814,35 +894,35 @@
       <p class="lead">Day 7 白天會走完聖維特(★特別安排)、黃金巷 No.22(<b>卡夫卡曾居 6 個月的藍色小屋</b>)、舊皇宮(12 世紀,大客廳完成於 16 世紀初)、高堡區、新城區瓦茨拉夫廣場(絲絨革命發生地)。團餐吃完約 20:30,布拉格夜景打燈最美。不用另外吃東西,散步最舒服。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · 查理大橋 + 舊城廣場打燈夜景</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Charles%20Bridge%2C%20Praha" target="_blank" class="gmap-link">📍 查理大橋</a> + <a href="https://maps.google.com/?q=Old%20Town%20Square%2C%20Prague" target="_blank" class="gmap-link">📍 舊城廣場</a> 打燈夜景</div>
         <div class="opt-desc">免費,橋上路燈橘光 + 城堡白光,最經典構圖。22:00 後人少更適合拍照。</div>
       </div>
       <div class="card-opt highlight">
-        <div class="opt-title">2 · 古典音樂會 1 小時精選版</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=St.%20Nicholas%20Church%2C%20Mal%C3%A1%20Strana%2C%20Prague" target="_blank" class="gmap-link">📍 St. Nicholas Church</a> / <a href="https://maps.google.com/?q=Obecn%C3%AD%20d%C5%AFm%2C%20n%C3%A1m%C4%9Bst%C3%AD%20Republiky%205%2C%20Praha" target="_blank" class="gmap-link">📍 Obecní dům</a> / <a href="https://maps.google.com/?q=Rudolfinum%2C%20Al%C5%A1ovo%20n%C3%A1b%C5%99e%C5%BE%C3%AD%2012%2C%20Praha" target="_blank" class="gmap-link">📍 Rudolfinum</a> 古典音樂會</div>
         <div class="opt-desc">CZK 550-900,聖尼古拉教堂/市民會館/Rudolfinum。pragueticketoffice.com 訂位。多 19:00 或 20:00 場次。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">3 · Kavárna Obecní dům 市民會館咖啡廳</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Kav%C3%A1rna%20Obecn%C3%AD%20d%C5%AFm%2C%20n%C3%A1m%C4%9Bst%C3%AD%20Republiky%205%2C%20Praha" target="_blank" class="gmap-link">📍 Kavárna Obecní dům</a> 市民會館咖啡廳</div>
         <div class="opt-desc">1912 新藝術華麗至極,最美咖啡廳之一,23:00 關。點 Melange 拍照。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">4 · Petřín 山觀景塔夜景</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Pet%C5%99%C3%ADn%20Lookout%20Tower%2C%20Pet%C5%99%C3%ADn%2C%20Praha" target="_blank" class="gmap-link">📍 Petřín 觀景塔</a> 山觀景塔夜景</div>
         <div class="opt-desc">小艾菲爾鐵塔,搭纜車上 + 登塔 CZK 350(含纜車),最後一班 22:00,俯瞰全城夜景。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">5 · Letná 公園俯瞰</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=Letn%C3%A1%20Beer%20Garden%2C%20Letensk%C3%A9%20sady%2C%20Praha" target="_blank" class="gmap-link">📍 Letná Beer Garden</a> 公園俯瞰</div>
         <div class="opt-desc">免費,走到公園邊 Beer Garden,生啤 CZK 60 + 俯瞰伏爾他瓦河上 9 座橋的角度。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">6 · Vyšehrad 高堡區夜訪</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Vy%C5%A1ehrad%2C%20V%20Pevnosti%2C%20Praha" target="_blank" class="gmap-link">📍 Vyšehrad 高堡區</a> 夜訪</div>
         <div class="opt-desc">本團 Day 7 下車但趕時間,晚上再回來散步+城牆俯瞰布拉格,免費、人少。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">7 · Lennon Wall + Kampa 小城區</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Lennon%20Wall%2C%20Velkop%C5%99evorsk%C3%A9%20n%C3%A1m%C4%9Bst%C3%AD%2C%20Praha" target="_blank" class="gmap-link">📍 Lennon Wall</a> + <a href="https://maps.google.com/?q=Kampa%20Island%2C%20Praha" target="_blank" class="gmap-link">📍 Kampa Island</a> 小城區</div>
         <div class="opt-desc">免費,披頭四約翰藍儂紀念塗鴉牆 + 小威尼斯 Kampa 島,查理大橋旁 5 分鐘。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">8 · Black Light Theatre 黑光劇</div>
+        <div class="opt-title">8 · <a href="https://maps.google.com/?q=Black%20Light%20Theatre%20Prague" target="_blank" class="gmap-link">📍 Black Light Theatre Praha</a> 黑光劇</div>
         <div class="opt-desc">布拉格特有的舞台劇型態,無語言障礙,90 分鐘 CZK 600-900,多在舊城。</div>
       </div>
     </div>
@@ -854,35 +934,35 @@
       <p class="lead">布拉格最後一晚。吃飯前後都還有時間,晚買晚逛都行(週六商店營業到晚)。</p>
 
       <div class="card-opt highlight">
-        <div class="opt-title">1 · 伏爾他瓦河晚餐船(升級版)</div>
+        <div class="opt-title">1 · <a href="https://maps.google.com/?q=Prague%20Boats%2C%20Ra%C5%A1%C3%ADnovo%20n%C3%A1b%C5%99e%C5%BE%C3%AD%2C%20Praha" target="_blank" class="gmap-link">📍 伏爾他瓦河晚餐船 Prague Boats</a>（升級版）</div>
         <div class="opt-desc">嫌中午百匯不夠的話,CZK 1,500-2,000 晚餐船,樂隊+自助+城堡夜景,3 天前訂 prague-boats.cz。</div>
       </div>
       <div class="card-opt highlight">
-        <div class="opt-title">2 · 天文鐘整點秀 + 舊市政廳登塔</div>
+        <div class="opt-title">2 · <a href="https://maps.google.com/?q=Prague%20Astronomical%20Clock%2C%20Old%20Town%20Hall%2C%20Starom%C4%9Bstsk%C3%A9%20n%C3%A1m%C4%9Bst%C3%AD%201%2C%20Praha" target="_blank" class="gmap-link">📍 天文鐘 + 舊市政廳</a> 整點秀 + 登塔</div>
         <div class="opt-desc">每整點 09:00-23:00 有 12 使徒移動秀。登塔 CZK 350,夜景超全面。最後一班約 22:00。</div>
       </div>
       <div class="card-opt highlight">
-        <div class="opt-title">3 · Manufaktura 最後採購 + 退稅準備</div>
+        <div class="opt-title">3 · <a href="https://maps.google.com/?q=Manufaktura%2C%20Melantrichova%2017%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Manufaktura Melantrichova</a> 最後採購 + 退稅準備</div>
         <div class="opt-desc">Melantrichova 旗艦店(21:00 關)把啤酒洗髮精/玫瑰乳霜一次買齊。CZK 2,001 以上記得開退稅單。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">4 · Black Light Theatre 黑光劇</div>
+        <div class="opt-title">4 · <a href="https://maps.google.com/?q=Ta%20Fantastika%2C%20Karlova%208%2C%20Praha" target="_blank" class="gmap-link">📍 Ta Fantastika</a> / <a href="https://maps.google.com/?q=Image%20Theatre%2C%20Pa%C5%99%C3%AD%C5%BEsk%C3%A1%204%2C%20Praha" target="_blank" class="gmap-link">📍 Image Theatre</a> 黑光劇</div>
         <div class="opt-desc">Ta Fantastika 或 Image Theatre,捷克 60-90 分特別演出,CZK 600-900。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">5 · AghaRTA / Reduta Jazz Club</div>
+        <div class="opt-title">5 · <a href="https://maps.google.com/?q=AghaRTA%20Jazz%20Club%2C%20%C5%BDelezn%C3%A1%2016%2C%20Praha" target="_blank" class="gmap-link">📍 AghaRTA Jazz Club</a> / <a href="https://maps.google.com/?q=Reduta%20Jazz%20Club%2C%20N%C3%A1rodn%C3%AD%2020%2C%20Praha" target="_blank" class="gmap-link">📍 Reduta Jazz Club</a></div>
         <div class="opt-desc">布拉格老牌爵士酒吧,21:00 開場,門票 CZK 300-600,酒吧氛圍很強。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">6 · Kafka 旋轉頭雕像 + 新城散步</div>
+        <div class="opt-title">6 · <a href="https://maps.google.com/?q=Kafka%20rotating%20head%20Quadrio%2C%20Sp%C3%A1len%C3%A1%2075%2C%20Praha" target="_blank" class="gmap-link">📍 Kafka 旋轉頭雕像</a> + 新城散步</div>
         <div class="opt-desc">大衛・切爾尼設計的巨型不鏽鋼旋轉頭,每整點 + 15 分轉動。免費,Quadrio 購物中心旁。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">7 · Dancing House「跳舞的房子」夜景 + 頂樓酒吧</div>
+        <div class="opt-title">7 · <a href="https://maps.google.com/?q=Dancing%20House%2C%20Ra%C5%A1%C3%ADnovo%20n%C3%A1b%C5%99e%C5%BE%C3%AD%2080%2C%20Praha" target="_blank" class="gmap-link">📍 Dancing House 跳舞的房子</a> 夜景 + 頂樓酒吧</div>
         <div class="opt-desc">蓋瑞設計的解構主義建築,頂樓 Glass Bar 調酒 CZK 200-400 看伏爾他瓦河夜景。</div>
       </div>
       <div class="card-opt">
-        <div class="opt-title">8 · 猶太區夜訪:Old New Synagogue 外觀 + 卡夫卡雕像</div>
+        <div class="opt-title">8 · <a href="https://maps.google.com/?q=Old%20New%20Synagogue%2C%20%C4%8Cerven%C3%A1%202%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Old New Synagogue</a> 外觀 + <a href="https://maps.google.com/?q=Franz%20Kafka%20Statue%2C%20Du%C5%A1n%C3%AD%2C%20Praha" target="_blank" class="gmap-link">📍 Kafka 雕像</a> 夜訪</div>
         <div class="opt-desc">歐洲最古老猶太會堂(13 世紀)外觀打燈,旁邊 Kafka 雕像,免費散步。</div>
       </div>
     </div>
@@ -896,37 +976,37 @@
 
   <h3>維也納(Day 2-3)</h3>
   <ul>
-    <li><b>Manner 榛果威化餅</b>(粉紅盒)— Stephansplatz 形象店最齊,€2-8,最紅伴手禮。</li>
-    <li><b>Julius Meinl am Graben 超市</b> — Staud's 果醬、Meinl 咖啡豆、蘋果白蘭地,€5-30。</li>
-    <li><b>Swarovski Kärntner Straße 旗艦店</b> — 現場當場退稅最快。</li>
-    <li><b>Augarten 瓷器 / Lobmeyr 水晶</b> — 高端送禮。</li>
+    <li><b><a href="https://maps.google.com/?q=Manner%2C%20Stephansplatz%207%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Manner 榛果威化餅</a></b>（粉紅盒）— Stephansplatz 形象店最齊,€2-8,最紅伴手禮。</li>
+    <li><b><a href="https://maps.google.com/?q=Julius%20Meinl%20am%20Graben%2C%20Graben%2019%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Julius Meinl am Graben</a></b> — Staud's 果醬、Meinl 咖啡豆、蘋果白蘭地,€5-30。</li>
+    <li><b><a href="https://maps.google.com/?q=Swarovski%2C%20K%C3%A4rntner%20Stra%C3%9Fe%2024%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Swarovski Kärntner Straße</a> 旗艦店</b> — 現場當場退稅最快。</li>
+    <li><b><a href="https://maps.google.com/?q=Augarten%20Manufaktur%2C%20Stock-im-Eisen-Platz%203-4%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Augarten</a> 瓷器 / <a href="https://maps.google.com/?q=Lobmeyr%2C%20K%C3%A4rntner%20Stra%C3%9Fe%2026%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Lobmeyr</a> 水晶</b> — 高端送禮。</li>
   </ul>
 
   <h3>薩爾斯堡(Day 4-5)</h3>
   <ul>
-    <li><b>Fürst 正宗莫札特球</b>(粉紅銀包裝)— 僅此 4 家店,€1.6/顆。</li>
+    <li><b><a href="https://maps.google.com/?q=Confiserie%20F%C3%BCrst%2C%20Brodgasse%2013%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Fürst 正宗莫札特球</a></b>（粉紅銀包裝）— 僅此 4 家店,€1.6/顆。</li>
     <li><b>Nannerl / Reber 巧克力</b> — Billa/Spar 超市就有,比機場便宜 3 成。</li>
-    <li><b>Salzburger Heimatwerk</b> — 奧地利手工桌布、木雕小物。</li>
+    <li><b><a href="https://maps.google.com/?q=Salzburger%20Heimatwerk%2C%20Residenzplatz%209%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Salzburger Heimatwerk</a></b> — 奧地利手工桌布、木雕小物。</li>
   </ul>
 
   <h3>哈修塔特(Day 4 2-3 小時)</h3>
   <ul>
     <li><b>粉紅/紫色調味鹽</b> — 湖邊小店或鹽礦禮品店,€5-12。</li>
-    <li><b>Christmas in Hallstatt</b> 全年聖誕飾品 — 木刻小鹿。</li>
+    <li><b><a href="https://maps.google.com/?q=Christmas%20in%20Hallstatt%2C%20Seestra%C3%9Fe%2C%204830%20Hallstatt" target="_blank" class="gmap-link">📍 Christmas in Hallstatt</a></b> 全年聖誕飾品 — 木刻小鹿。</li>
   </ul>
 
   <h3>庫倫洛夫(Day 5-6)</h3>
   <ul>
-    <li><b>波西米亞水晶 Moser / Preciosa 小件</b> — 比布拉格便宜、人少易試。</li>
-    <li><b>手繪木偶</b> — Marionety Truhlář 認證店。</li>
+    <li><b><a href="https://maps.google.com/?q=Moser%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 波西米亞水晶</a> Moser / Preciosa 小件</b> — 比布拉格便宜、人少易試。</li>
+    <li><b>手繪木偶</b> — <a href="https://maps.google.com/?q=Marionety%20Truhl%C3%A1%C5%99%2C%20Latr%C3%A1n%206%2C%20381%2001%20%C4%8Cesk%C3%BD%20Krumlov" target="_blank" class="gmap-link">📍 Marionety Truhlář</a> 認證店。</li>
   </ul>
 
   <h3 style="color:var(--red);">布拉格(Day 6-8 主力+退稅)</h3>
   <ul>
-    <li><b>Manufaktura 啤酒保養品</b>(Melantrichova 旗艦店)— 比機場便宜 30%。</li>
-    <li><b>波西米亞水晶大件</b> — Pařížská 大街,可店家國際直寄。</li>
+    <li><b><a href="https://maps.google.com/?q=Manufaktura%2C%20Melantrichova%2017%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Manufaktura 啤酒保養品</a></b>（Melantrichova 旗艦店）— 比機場便宜 30%。</li>
+    <li><b><a href="https://maps.google.com/?q=Pa%C5%99%C3%AD%C5%BEsk%C3%A1%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 波西米亞水晶大件 Pařížská</a></b>,可店家國際直寄。</li>
     <li><b>超市伴手 Billa/Albert</b> — Kofola、Koruna 巧克力、Hamé 燉肉罐。</li>
-    <li><b>Botanicus 天然保養品</b> — 捷克平價版 L'Occitane,玫瑰皂很紅。</li>
+    <li><b><a href="https://maps.google.com/?q=Botanicus%2C%20T%C3%BDn%203%2C%20110%2000%20Praha" target="_blank" class="gmap-link">📍 Botanicus</a> 天然保養品</b> — 捷克平價版 L'Occitane,玫瑰皂很紅。</li>
   </ul>
 
   <div class="alert">
@@ -946,9 +1026,9 @@
   <div class="table-wrap"><table>
     <thead><tr><th>項目</th><th>城市</th><th>大人 / 小孩</th><th>建議</th></tr></thead>
     <tbody>
-      <tr><td>維也納音樂會(B 區)<br><span style="font-weight:400;color:var(--muted);font-size:12px;">100 分鐘演奏</span></td><td>維也納</td><td>€95 / €95</td><td>莫札特交響樂團於庫爾沙龍 Kursalon 等場地,CP 較佳</td></tr>
+      <tr><td>維也納音樂會(B 區)<br><span style="font-weight:400;color:var(--muted);font-size:12px;">100 分鐘演奏</span></td><td>維也納</td><td>€95 / €95</td><td>莫札特交響樂團於<a href="https://maps.google.com/?q=Kursalon%20Wien%2C%20Johannesgasse%2033%2C%201010%20Wien" target="_blank" class="gmap-link">📍 庫爾沙龍 Kursalon</a> 等場地,CP 較佳</td></tr>
       <tr><td>維也納金色大廳音樂會<br><span style="font-weight:400;color:var(--muted);font-size:12px;">100 分鐘 · B 區</span></td><td>維也納</td><td>€105 / €105</td><td>可用 Staatsoper 站票 €10-18 替代</td></tr>
-      <tr><td>熊布朗皇宮(門票+導覽)<br><span style="font-weight:400;color:var(--muted);font-size:12px;">2024/4/1 起適用</span></td><td>維也納</td><td>€45 / €40<br><span style="font-weight:400;color:var(--muted);font-size:11px;">12 歲以下</span></td><td>本團沒去熊布朗,想看 <span class="chip chip-red">推薦加購</span></td></tr>
+      <tr><td><a href="https://maps.google.com/?q=Sch%C3%B6nbrunn%20Palace%2C%20Sch%C3%B6nbrunner%20Schlo%C3%9Fstr.%2047%2C%201130%20Wien" target="_blank" class="gmap-link">📍 熊布朗宮 Schönbrunn Palace</a>（門票+導覽）<br><span style="font-weight:400;color:var(--muted);font-size:12px;">2024/4/1 起適用</span></td><td>維也納</td><td>€45 / €40<br><span style="font-weight:400;color:var(--muted);font-size:11px;">12 歲以下</span></td><td>本團沒去熊布朗,想看 <span class="chip chip-red">推薦加購</span></td></tr>
       <tr><td>鹽湖區遊船<br><span style="font-weight:400;color:var(--muted);font-size:12px;">含船票+訂位</span></td><td>鹽湖區</td><td>€25 / €20</td><td>想看湖上角度才值得,C/P 普通</td></tr>
     </tbody>
   </table></div>
@@ -969,8 +1049,8 @@
   <div class="tip">
     <b>✅ 已完成訂位</b>
     <ul style="margin:6px 0 0 0;">
-      <li><b>Day 3 (6/1 一) 18:00</b> · Figlmüller(Bäckerstraße 分店)· 6 人 · 備註:一位女士不吃牛肉</li>
-      <li><b>Day 5 (6/3 三) 12:30</b> · Stiftskulinarium St. Peter · 6 人 · 訂位編號 #162735233</li>
+      <li><b>Day 3 (6/1 一) 18:00</b> · <a href="https://maps.google.com/?q=Figlm%C3%BCller%2C%20B%C3%A4ckerstra%C3%9Fe%206%2C%201010%20Wien" target="_blank" class="gmap-link">📍 Figlmüller Bäckerstraße</a>（Bäckerstraße 分店）· 6 人 · 備註:一位女士不吃牛肉</li>
+      <li><b>Day 5 (6/3 三) 12:30</b> · <a href="https://maps.google.com/?q=Stiftskulinarium%20St.%20Peter%2C%20St.-Peter-Bezirk%201/4%2C%205020%20Salzburg" target="_blank" class="gmap-link">📍 Stiftskulinarium St. Peter</a> · 6 人 · 訂位編號 #162735233</li>
     </ul>
   </div>
 
@@ -989,7 +1069,7 @@
     <li>Day 8 晚餐 · U Fleků / Lokál / U Modré kachničky / V Zátiší</li>
     <li>Day 7 晚古典音樂會 · pragueticketoffice.com(3-5 天前)</li>
     <li>Day 8 伏爾他瓦晚餐船(若要加)· prague-boats.cz 3 天前</li>
-    <li>熊布朗宮自費(若領隊沒幫訂)· schoenbrunn.at 時段票</li>
+    <li><a href="https://maps.google.com/?q=Sch%C3%B6nbrunn%20Palace%2C%20Vienna" target="_blank" class="gmap-link">📍 熊布朗宮 Schönbrunn</a> 自費（若領隊沒幫訂）· schoenbrunn.at 時段票</li>
   </ul>
 
   <h3><span class="chip chip-amber">🟠 可訂可不訂</span></h3>
